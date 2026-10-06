@@ -2,14 +2,22 @@
 
 ## Miembros del grupo LX-XXX-X (sustituir)
 
-1. Apellidos, Nombre
-1. Apellidos, Nombre
-1. Apellidos, Nombre
-1. Apellidos, Nombre
+1. Cruz España, Victoria
+1. Gómez Núñez, Elena
+1. Pérez Calvo, Ángeles
+1. Fernández de Villavicencio, Cristina
 
 ## 1. Introducción al problema
 
-- Descripción del problema para poner en contexto el proyecto, incluyendo información sobre los clientes y usuarios, la situación actual, problemas, expectativas, etc. Se valorará la presencia de información multimedia (fotos, gráficos, documentos escaneados, etc.).
+En la actualidad, los dispositivos electrónicos se han vuelto un imprescindible en nuestra vida. Donde más repercute es en el ámbito académico y en los primeros años de vida laboral. Existe una gran variedad de dispositivos con características muy diversas entre ellos. Ordenadores portátiles, tablets, teléfonos móviles, etc, y cada uno tiene su función, estudiar, programar, asistir a clases online o desarrollar tareas laborales. Sin embargo, estas necesidades no siempre son permanentes. Muchas veces nuestros propios dispositivos no pueden realizar las tareas que necesitamos, ante la necesidad de proyectos temporales más complejos que no solemos realizar habitualmente.
+
+Esta necesidad temporal de disponer de determinados dispositivos es habitualmente un problema. La única solución es adquirir un recurso tecnológico nuevo para cubrir una necesidad temporal. Aparte de este desembolso económico, damos lugar al abandono de dispositivos a los que podríamos prolongar su vida útil. Todo esto origina una gran cantidad de residuos tecnológicos. Por lo que debemos buscar formas de consumo más responsables, sostenibles y orientadas a extender su periodo de uso.
+
+Como respuesta a esta situación, proponemos una plataforma de alquiler temporal de aparatos electrónicos reacondicionados, ofreciendo una alternativa más económica, flexible y sostenible a la compra tradicional. Cada usuario podrá acceder al hardware que necesite, durante el periodo de tiempo necesario. De este modo, un mismo dispositivo será reutilizado por diferentes personas reduciendo su sustitución innecesaria.
+
+Los principales destinatarios de este servicio serán estudiantes de Formación Profesional, estudiantes universitarios y jóvenes que se encuentren en el principio de su etapa laboral y que tengan este problema. No obstante, la plataforma cubre otras muchas necesidades, como cuando falla tu ordenador y necesitas sustituirlo inmediatamente. El sistema también será utilizado por el personal de la empresa, los encargados del catálogo de equipos, su disponibilidad, tramitar los alquileres y devoluciones...
+
+Con este proyecto ofrecemos una solución que proporcione accesibilidad, flexibilidad y sostenibilidad
 
 ## 2. Glosario de términos
 

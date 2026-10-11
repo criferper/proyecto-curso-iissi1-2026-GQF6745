@@ -215,6 +215,30 @@ para encontrar un dispositivo que se ajuste a mis necesidades
 - Al realizar el mismo filtro de categoría portátil y marca HP, comprobar que los dispositivos con esos filtros, que se encuentran con estado 'alquilado' o 'en mantenimiento' no aparecen en el listado.
 - Al filtrar una combinación de categoría y marca que no tiene dispositivo disponible en ese momento, la plataforma devuelve una lista vacía y un mensaje indicando que no hay dispositivos disponibles para esos filtros.
 
+### R.F.02. Consulta de alquileres de de un dispositivo
+
+Como técnico de reacondicionamiento
+quiero consultar el historial de alquileres de un dispositivo concreto
+para conocer su trayectoria de uso previa y evaluar su estado de desgaste antes de volver a estar disponible en la plataforma de alquiler.
+
+**Prueba de aceptación**
+- Con un dispositivo seleccionado que cuente con alquileres previos registrados, al consultar el historial, la plataforma muestra el listado cronológico de sus usos anteriores junto con las condiciones en las que fue devuelto.
+- Al consultar el historial de un dispositivo concreto, la plataforma muestra únicamente la información correspondiente a ese dispositivo, sin mezclar datos de otros.
+- Al consultar el historial de un dispositivo que nunca ha sido alquilado, la plataforma muestra un mensaje indicando que el dispositivo o cuenta con alquileres previos.
+
+### R.F.03. Consulta detallada de un dispositivo
+
+Como cliente
+quiero consultar los detalles de un dispositivo concreto, incluyendo sus características, precio y disponibilidad
+para ver si se ajusta a mis necesidades.
+
+**Prueba de aceptación**
+- En el sistema hay registrado un portátil HP con 8GB de RAM, estado 'disponible', y un precio de 15€/día, cuando es seleccionado por el cliente, el sistema muestra en pantalla las características técnicas , su disponibilidad y precio.
+- Si un cliente trata de acceder a los detalles de un dispositivo que haya sido dado de baja o cuyo código no exista, el sistema no muestra los datos y avisa con un mensaje de que ya no se encuentra disponible.
+- Si un dispositivo de la plataforma tiene algún campo obligatorio sin rellenar, es decir, se dio de alta sin especificar alguna de las características, el sistema muestra el resto y marca como no disponible el campo sin rellenar.
+
+### R.F.04 Listado de alquileres activos de un cliente 
+
 #### 4.1.1. Requisitos de información
 
 ##### R.I.01. Título requisito de información

@@ -115,14 +115,55 @@ para conocer su trayectoria de uso previa y evaluar su estado de desgate antes d
 
 Como cliente
 quiero consultar los detalles de un dispositivo concreto, incluyendo sus características, precio y disponibilidad,
-para ver si se ajusta a mis necesidades
+para ver si se ajusta a mis necesidades.
 
 **Prueba de acepatción**
 - En la plataforma hay registrado un portátil HP con 8GB de RAM, estado 'disponible', y un precio de 15€/día, cuando es seleccionado por el cliente, la plataforma muestra en pantalla sus características técnicas, su disponibilidad y precio.
 - Si un cliente trata de acceder a los detalles de un dispositivo que ha sido dado de baja, el sistema no muestra los datos y avisa con un mensaje de que ya no se encuentra disponible.
 - Si un dispositivo activo tiene alguna característica opcional o algún dato sin rellenar, el sistema muestra la ficha correctamente indicando correctamente el valor como 'No especificado' en en dicho campo, sin interrumpir la visualización del resto de la información.
 
-### R.F.04. Listado de alquileres activos
+### R.F.04. Listado de alquileres activos de un cliente
+
+Como administrador de la plataforma
+quiero saber el listado de alquileres de un cliente concreto,
+para poder informarle lo antes posible sobre el estado de los equipos actuales o resolverle cualquier duda sobre sus alquileres en curso. 
+
+**Prueba de aceptación**
+- Dado un cliente registrado posee alquileres activos, al consultar su expediente, la plataforma muestra el listado detallado de todos sus dispositivos alquilados actualmente junto con los plazos de devolución y su estado.
+- Al consultar la ficha de un cliente registrado que no tiene alquileres activos, la plataforma devuelve la lista vacía y muestra un mensaje indicando que el cliente no cuenta con ningún alquiler en curso.
+- Al ingresar los datos de un cliente que no existe en la plataforma o buscar un dispositivo que no se encuentra registrado en la plataforma, esta genera un mensaje especificando que el usuario o dispositivo no está registrado.
+
+### R.F.05. Listado de incidencias abiertas
+
+Como técnico de reacondicionamiento
+quiero saber el listado de incidencias abiertas de los diferentes dispositivos
+para solucionarlas lo antes posible y evitar que afecten a alquileres futuros
+
+**Prueba de aceptación**
+- Al acceder al apartado de incidencias de la plataforma, el sistema muestra el listado de incidencias reportadas actualmente, permitiéndole identificar qué dispositivos requieren intervención.
+- Al intentar filtrar el registro de incidencias de un dispositivo que no se encuentra en la base de datos de la plataforma y este muestra un mensaje de error que indica que no existe el dispositivo.
+- Al acceder al listado de incidencias abiertas cuando no hay reportes de incidencias, la plataforma muestra una lista vacía y genera un mensaje indicando que no hay ninguna incidencia abierta.
+
+### R.F.06. Listado de alquileres próximos a vencer
+
+Como administrador de la plataforma
+quiero saber el listado de alquileres que se encuentran próximos a vencer 
+para ponerme en contacto con los clientes y gestionar la renovación o recogida de los dispositivos antes de que finalice el contrato
+
+**Pruebas de acepatción**
+- Al acceder a los listados de alquileres próximos a vencer para llevar un control diario, la plataforma muestra correctamente los contratos más próximos a vencer, permitiendo identificar a los clientes correspondientes para gestionar la renovación o recogida de los dispositivos.
+- Al introducir un rango de fechas no válido, el sistema muestra un mensaje de error indicando que el filtro es erróneo y no permite realizar la búsqueda.
+- Al acceder a los listados de alquileres próximos a vencer cuando no hay contratos que expiren en el periodo indicado, el sistema muestra una lista vacía, indicando que no hay ningún alquiler próximo a vencer.
+
+### R.F.07. Listado de dispositivos con mayor ciclo de reutilización
+
+Como empleado
+quiero consultar el listado de dispositivos con mayor ciclo de reutilización
+para identificar el desgaste material y planificar su renovación o mantenimiento.
+
+**Pruebas de aceptación**
+- Al acceder al listado de dispositivos con mayor ciclo de reutilización para revisar el estado de los dispositivos y la plataforma los muestra correctamente ordenados por su nivel de uso, permitiendo cuáles requieren mantenimiento y cuáles sustitución.
+- Al acceder al listado de dispositivos con mayor ciclo de reutilización consultando un dispositivo que no se encuentra en la plataforma, esta por tanto envía un mensaje indicando que los datos son erróneos.
 
 
 #### 4.1.1. Requisitos de información

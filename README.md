@@ -95,7 +95,34 @@ Como usuario
 quiero consultar el listado de dispositivos disponibles aplicando filtros de categoría y marca
 para encontrar un dispositivo que se adapte a misnnecesidades.
 
-**P
+**Prueba de aceptación**
+- Con tres portátiles de la marca Lenovo y uno HP disponibles en el sistema, al aplicar el filtro de categoría 'portátil' y de la marca 'HP', la plataforma muestra únicamente el dispositivo HP disponible.
+- Al realizar el mismo filtro de categoría 'portátil' y marca 'HP', comprobar que los dispositivos con esos filtros que se encuentran en estado 'alquilado' o 'en mantenimiento' no aparecen en el listado.
+- Al filtrar por una combinación de categoría y marca que no tiene dispositivo disponible en ese momento el sistema devuelve una lista vacía y un mensaje indicando que no hay dispositivos disponibles en ese momento, el sistema devuelve una lista vacía y un mensaje indicando que no hay dispositivos disponibles para esos filtros.
+
+### R.F.02 Consulta de alquileres de un dispositivo
+
+Como técnico de reaccondicionamiento
+quiero consultar el historial de alquileres de un dispositivo concreto
+para conocer su trayectoria de uso previa y evaluar su estado de desgate antes de volver a estar disponible en la plataforma de alquiler.
+
+**Prueba de aceptación**
+- Con un dispositivo seleccionado que tiene alquileres previos registrados, al consultar su historial, el sistema muestra el listado cronológico de sus usos anteriores, junto con las condiciones en las que fue devuelto.
+- Al consultar el historial de un dispositivo concreto, la plataforma muestra únicamente la información correspondiente a ese equipo, sin mezclar datos de otros dispositivos.
+- Al consultar el historial de un dispositivo que nunca ha sido alquilado, la plataforma muestra un mensaje indicando que el dispositivo no cuenta con alquileres previos.
+
+### R.F.03. Consulta detallada de un dispositivo
+
+Como cliente
+quiero consultar los detalles de un dispositivo concreto, incluyendo sus características, precio y disponibilidad,
+para ver si se ajusta a mis necesidades
+
+**Prueba de acepatción**
+- En la plataforma hay registrado un portátil HP con 8GB de RAM, estado 'disponible', y un precio de 15€/día, cuando es seleccionado por el cliente, la plataforma muestra en pantalla sus características técnicas, su disponibilidad y precio.
+- Si un cliente trata de acceder a los detalles de un dispositivo que ha sido dado de baja, el sistema no muestra los datos y avisa con un mensaje de que ya no se encuentra disponible.
+- Si un dispositivo activo tiene alguna característica opcional o algún dato sin rellenar, el sistema muestra la ficha correctamente indicando correctamente el valor como 'No especificado' en en dicho campo, sin interrumpir la visualización del resto de la información.
+
+### R.F.04. Listado de alquileres activos
 
 
 #### 4.1.1. Requisitos de información

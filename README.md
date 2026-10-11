@@ -89,17 +89,16 @@ El administrador de la plataforma necesita tener la información organizada y ac
 
 ### 4.1. Requisitos funcionales
 
-#### R.F.01. Título requisito funcional
+#### R.F.01. Listado de dispositivos disponibles por filtros
 
-Como [tipo de usuario]
-quiero [servicio]
-para [razón]
+Como cliente
+quiero consultar el listado de dispositivos disponibles aplicando filtros de categoría y marca
+para encontrar un dispositivo que se ajuste a mis necesidades 
 
 **Prueba de aceptación**
-- Descripción de la primera comprobación a realizar
-- Descripción de la segunda comprobación a realizar
-- Se debe aplicar la regla de negocio R.N.XX.
-- ...
+- Con tres dispositivos de la marca 'Lenovo' y uno de la marca 'HP' disponibles en la plataforma, al aplicar el filtro de categoría 'portátil' y de la marca 'HP', el sistema muestra únicamente el dispositivo HP disponible.
+- Al realizar el mismo filtro de categoría portátil y marca HP, comprobar que los dispositivos con esos filtros, que se encuentran con estado 'alquilado' o 'en mantenimiento' no aparecen en el listado.
+- Al filtrar una combinación de categoría y marca que no tiene dispositivo disponible en ese momento, la plataforma devuelve una lista vacía y un mensaje indicando que no hay dispositivos disponibles para esos filtros.
 
 #### 4.1.1. Requisitos de información
 

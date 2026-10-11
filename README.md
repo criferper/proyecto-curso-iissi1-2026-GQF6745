@@ -46,7 +46,7 @@ Con este proyecto ofrecemos una solución que proporcione accesibilidad, flexibi
 
 ### 3.1. Requisitos generales
 
-La finalidad de la plataforma es dar un servicio de alquiler de dispositivos electrónicos reacondicionados. El sistema recogerá la información de los dispositivos y facilitará su consulta, aconsejando que vendría mejor en cada caso.
+La finalidad de la plataforma es dar un servicio de alquiler de dispositivos electrónicos reacondicionados. El sistema recogerá la información de los dispositivos y facilitará su consulta.
 
 Conforma a esto, establecemos los siguientes requisitos generales.
 

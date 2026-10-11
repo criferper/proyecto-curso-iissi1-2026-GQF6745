@@ -88,6 +88,16 @@ El administrador de la plataforma necesita tener la información organizada y ac
 ## 4. Catálogo de requisitos
 
 ### 4.1. Requisitos funcionales
+
+### R.F.01 Listado de dispositivos disponibles por filtros
+
+Como usuario 
+quiero consultar el listado de dispositivos disponibles aplicando filtros de categoría y marca
+para encontrar un dispositivo que se adapte a misnnecesidades.
+
+**P
+
+
 #### 4.1.1. Requisitos de información
 
 ##### R.I.01. Información de usuarios

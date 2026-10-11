@@ -88,6 +88,121 @@ El administrador de la plataforma necesita tener la información organizada y ac
 ## 4. Catálogo de requisitos
 
 ### 4.1. Requisitos funcionales
+#### 4.1.1. Requisitos de información
+
+##### R.I.01. Información de usuarios
+
+Como administrador de la plataforma, quiero disponer de la información de los usuarios registrados. Esta información incluye su nombre, apellidos, correo electrónico, contraseña, teléfono, para poder conocer cada caso dentro de la plataforma.
+
+**Prueba de aceptación**
+- Registrar un cliente indicando nombre, apellidos, correo electrónico y contraseña, para que toda la información se almacene correctamente.
+- Registrar un usuario sin número de teléfono y comprobar que se guarden bien los datos.
+- Registrar un técnico de reacondicionamiento y comprobar que quede identificado como corresponde.
+- Registrar un administrador de la plataforma y comprobar que esté diferenciado del resto de usuarios.
+
+##### R.I.02. Información de modelos y características de dispositivos
+
+Como cliente, quiero tener al alcance la información de todos los tipos de recursos electrónicos disponibles en el catálogo, incluyendo su marca, modelo, categoría, descripción y características principales, para comparar estos dispositivos y ver cual se adapta mejor a lo que necesito.
+
+**Prueba de aceptación**
+- Registrar cada modelo de recurso tecnológico indicando su marca, modelo y categoría, y verificar que la información se almacena correctamente.
+- Comprobar que las características descritas y los modelos correspondientes son verídicos.
+- Registrar modelos de distintas categorías, como portátil, móvil y tablet, y comprobar que quedan clasificados correctamente.
+
+##### R.I.03. Información de dispositivos
+
+Como técnico de reacondicionamiento, quiero tener a mano la información sobre el estado, condición y disponibilidad de cada dispositivo, dependiendo de su modelo, para saber cual está preparado para ser alquilado o si necesita ser revisado o reparado.
+
+**Prueba de aceptación**
+- Registrar cada aparato electrónico asocicado a un modelo y comprobar que quede almacenado correctamente.
+- Registrar la condición o estado de un dispositivo y asegurarse que todos los usuarios puedan acceder a verlo.
+- Modificar el estado del equipo cuando necesite una reparación y actualizar la información en la página.
+- Consultar si los dispositivos aparecen como disponibles o no disponibles para su alquiler.
+
+##### R.I.04. Información de tarifas
+
+Como cliente, quiero tener la información de las tarifas de cada dispositivo electrónico, incluyendo el periodo de alquiler y su precio, para poder saber el coste de alquiler y elegir la mejor opción para mí.
+
+**Prueba de aceptación**
+- Registrar cada tarifa indicando su periodo de alquiler y precio, y comprobar que la información corresponde a su modelo.
+- Asociar cada tarifa a un modelo y comprobar que quede relacionada con el dispositivo al que corresponde.
+- Registrar distintas tarifas para diferentes periodos de alquiler.
+
+##### R.I.05. Información de alquileres
+
+Como administrador de la plataforma, quiero conocer los alquileres realizados, junto al cliente que realiza el alquiler , el dispositivo alquilado, periodo y precio correspondiente, para poder hacer un seguimiento de los alquileres gestionados por la plataforma.
+
+**Prueba de aceptación**
+- Asociar un alquiler a un cliente y dispositivo, y almacenar la información.
+- Registrar el periodo de alquiler.
+- Registrar el precio de cada alquiler para poder consultarlo posteriormente.
+- Consultar el historial de alquileres.
+
+##### R.I.06. Información de devoluciones
+
+Como administrador de la plataforma, quiero conocer la información relacionada con la devolución de los dispositivos alquilados, incluyendo la fecha de devolución y la condición en la que se entrega, para comprobar que el alquiler ha finalizado correctamente y mantener actualizada la información.
+
+**Prueba de aceptación**
+- Registrar una devolución asociada a un alquiler y vincularla correctamente.
+- Registrar la fecha de devolución y comprobar su correcta almacenación.
+- Registrar el estado en el que se devuelve el dispositivo y actualizarlo para consultarlo posteriormente.
+- Registrar el alquiler finalizado asociado a su devolución correspondiente.
+
+##### R.I.07. Información de reacondicionamientos
+
+Como técnico de reacondicionamiento, quiero disponer de la información sobre los reacondicionamientos realizados a los dispositivos, incluyendo el dispositivo afectado, las averías y los problemas detectados, y la condición resultante del aparato electrónico, para comprobar si puede volver a ofrecerse en alquiler.
+
+**Prueba de aceptación**
+- Registrar un reacondicionamiento asociado a un recurso electrónico y vincularlo.
+- Registrar los problemas o averías detectados durante la revisión.
+- Registrar las actuaciones realizadas sobre el dispositivo y comprobar que se pueden consultar.
+- Consultar el reacondicionamiento y comprobar que se muestra su condición tras la reparación o revisión.
+
+##### R.I.08. Información de incidencias
+
+Como técnico de reacondicionamiento, quiero conocer la información sobre las incidencias detectadas en los aparatos tecnológicos, incluyendo el dispositivo afectado, la descripción del problema, el estado de la incidencia y el alquiler durante el cual se produjo, para poder hacer un seguimiento y asegurar que el problema se ha resuelto.
+
+**Prueba de aceptación**
+- Registrar cada incidencia y vincularla al dispositivo.
+- Registrar una descripción del problema detectado.
+- Actualizar el estado de una incidencia y almacenar la modificación.
+- Asociar la incidencia ocurrida a un alquiler cuando el problema se haya producido durante dicho alquiler.
+
+#### 4.1.2. Reglas de negocio
+
+##### R.N.01. No solapamiento de alquileres
+
+Un mismo dispositivo no puede estar asociado a dos alquileres en periodos que coincidan. Para realizar un nuevo alquiler, el dispositivo debe encontrarse disponible durante todo el periodo.
+
+##### R.N.02. Estado adecuado para el alquiler
+
+Un dispositivo solo puede ser alquilado cuando se encuentre en las condiciones necesarias para su uso. Si necesita una revisión o reparación no podrán ofrecerse hasta que se compruebe nuevamente su correcto funcionamiento.
+
+##### R.N.03. Un único alquiler activo por cliente
+
+Un cliente solo podrá realizar un alquiler a la vez. Para alquilar otro dispositivo deberá haber finalizado y devuelto el anterior.
+
+##### R.N.04. Validez del periodo de alquiler 
+
+La fecha de finalización prevista debe ser posterior a su fecha de inicio. El periodo de alquiler debe corresponder con una de las modalidades ofrecidas por la plataforma.
+
+##### R.N.05. Devolución asociada a un alquiler
+
+Toda devolución debe estar asociada a un alquiler previamente registrado. Un alquiler solo debe tener una devolución asociada.
+
+##### R.N.06. Revisión antes de volver a ofrecer un dispositivo
+
+Cuando se presente una incidencia que afecte al correcto funcionamiento, no volverá a estar disponible hasta que haya sido revisado y el técnico de reacondicionamiento determine que puede volver a su uso.
+
+##### R.N.07. Aplicación de tarifas
+
+El precio de un alquiler debe corresponder con una tarifa definida según el modelo y el alquiler seleccionado.
+
+##### R.N.08. Asociación de incidencias
+
+Toda incidencia debe estar asociada al dispositivo en el que se haya detectado. Si se produce durante el alquiler hay que asociar el usuario con la incidencia para realizar su seguimiento.
+
+
 
 #### R.F.01. Listado de dispositivos disponibles por filtros
 

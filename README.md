@@ -91,7 +91,7 @@ El administrador de la plataforma necesita tener la información organizada y ac
 
 ### R.F.01 Listado de dispositivos disponibles por filtros
 
-Como usuario 
+Como cliente 
 quiero consultar el listado de dispositivos disponibles aplicando filtros de categoría y marca
 para encontrar un dispositivo que se adapte a misnnecesidades.
 
@@ -162,8 +162,9 @@ quiero consultar el listado de dispositivos con mayor ciclo de reutilización
 para identificar el desgaste material y planificar su renovación o mantenimiento.
 
 **Pruebas de aceptación**
-- Al acceder al listado de dispositivos con mayor ciclo de reutilización para revisar el estado de los dispositivos, la plataforma los muestra correctamente ordenados por su nivel de uso, indicando claramente cuáles requieren mantenimiento y cuáles sustitución.
-- Al acceder al listado de dispositivos con mayor ciclo de reutilización consultando un dispositivo que no se encuentra en la plataforma, esta envía un mensaje indicando que los datos son erróneos.
+- Al acceder al listado de dispositivos con mayor ciclo de reutilización para revisar el estado de los dispositivos, la plataforma de alquiler los muestra correctamente ordenados por su nivel de uso, indicando claramente cuáles requieren mantenimiento y cuáles sustitución.
+- Al acceder al listado de dispositivos con mayor ciclo de reutilización consultando un dispositivo que no se encuentra en la plataforma de alquiler, esta muestra un mensaje indicando que no se encontraron resultados para la búsqueda.
+- Al acceder al listado de dispositivos con mayor ciclo de reutilización aplicando un filtro por categoría de dispositivos sin resultados disponibles, la plataforma de alquiler muestra un mensaje indicando que no se encontraron coincidencias.
 
 
 #### 4.1.1. Requisitos de información

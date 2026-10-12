@@ -157,13 +157,13 @@ para ponerme en contacto con los clientes y gestionar la renovación o recogida 
 
 ### R.F.07. Listado de dispositivos con mayor ciclo de reutilización
 
-Como empleado
+Como técnico de reacondicionamiento
 quiero consultar el listado de dispositivos con mayor ciclo de reutilización
 para identificar el desgaste material y planificar su renovación o mantenimiento.
 
 **Pruebas de aceptación**
-- Al acceder al listado de dispositivos con mayor ciclo de reutilización para revisar el estado de los dispositivos y la plataforma los muestra correctamente ordenados por su nivel de uso, permitiendo cuáles requieren mantenimiento y cuáles sustitución.
-- Al acceder al listado de dispositivos con mayor ciclo de reutilización consultando un dispositivo que no se encuentra en la plataforma, esta por tanto envía un mensaje indicando que los datos son erróneos.
+- Al acceder al listado de dispositivos con mayor ciclo de reutilización para revisar el estado de los dispositivos, la plataforma los muestra correctamente ordenados por su nivel de uso, indicando claramente cuáles requieren mantenimiento y cuáles sustitución.
+- Al acceder al listado de dispositivos con mayor ciclo de reutilización consultando un dispositivo que no se encuentra en la plataforma, esta envía un mensaje indicando que los datos son erróneos.
 
 
 #### 4.1.1. Requisitos de información

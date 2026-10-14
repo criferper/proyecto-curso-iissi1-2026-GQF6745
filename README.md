@@ -290,9 +290,23 @@ Toda incidencia debe estar asociada al dispositivo en el que se haya detectado. 
 |   |   | RF07. Listado de dispositivos con mayor ciclo de reutilización |
 
 
- 
+### 4.3. Requisitos no funcionales 
 
-### 4.3. Requisitos no funcionales (opcional)
+**R.N.F.01. Facilidad de uso**
+
+Como cliente quiero que la plataforma tenga una interfaz clara e intuitiva para poder consultar los dispositivos, precios y disponibilidad de forma sencilla.
+
+**R.N.F.02. Seguridad de acceso** 
+
+Como administrador de la plataforma quiero que cada tipo de usuario pueda acceder únicamente a la información y funciones que le correspondan para evitar accesos no autorizados dentro de la plataforma.
+
+**R.N.F.03. Tiempo de respuesta**
+
+Como cliente quiero que las consultas habituales del catálogo, precios y disponibilidad se muestren en un tiempo máximo de tres segundos para poder utilizar la plataforma de forma fluida.
+
+**R.F.N.04. Compatibilidad**
+
+Como usuario quiero poder utilizar la plataforma desde distintos tamaños de pantalla y navegadores web actuales para poder acceder al servicio tanto desde un ordenador como desde un dispositivo móvil.
 
 **R.N.F. 01. Título requisito no funcional**
 Como [tipo de usuario]

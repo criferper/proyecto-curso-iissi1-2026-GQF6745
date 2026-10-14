@@ -66,19 +66,19 @@ RG-6: Gestión centralizada de la información: el sistema organzará la informa
 
 Podemos encontrar tres tipos de usuarios: cliente, técnico de reacondicionamiento y administrador de la plataforma.
 
-CLIENTE
+CLIENTE:
 El cliente es la persona que hace uso de la plataforma para buscar dispositivos de acuerdo a sus necesidades. Este usuario está asociado principalmente a estudiantes tanto de formación profesional como universitarios ya que son los que más tecnologías suelen necesitar, y jóvenes que están comenzando su vida laboral.
 
 Sus principales necesidades son consultar el catálogo de dispositivos disponibles, conocer toda la información de los dispositivos, comparar distintos dispositivos y precios, y comprobar disponibilidad de dispositivos.
 
 El cliente es el usuario final del servicio, el que hace uso de los servicios y sin él no se cumpliría el objetivo de la plataforma.
 
-TÉCNICO DE REACONDICIONAMIENTO
+TÉCNICO DE REACONDICIONAMIENTO:
 El técnico de reacondicionamiento es el responsable de revisar el estado de los dispositivos y comprobar su funcionamiento. Si se detectase una avería en un dispositivo, el técnico de reacondicionamiento es el encargado de repararlo y comprobar que funcione bien de nuevo.
 
 Sus principales necesidades son consultar el estado de los dispositivos, determinar si necesita reparación o puede ofrecerse al cliente, y conocer las incidencias detectadas.
 
-ADMINISTRADOR DE LA PLATAFORMA
+ADMINISTRADOR DE LA PLATAFORMA:
 El administrador de la plataforma es el responsable de supervisar la plataforma y comprobar que funcione correctamente y no le falta ninguna información, así como los accesos que tiene cada usuario en la plataforma.
 
 Sus principales necesidades son consultar la información tanto de dispositivos como alquileres, garantizar que todos los usuarios puedan acceder a la información que les corresponden, facilitar el mantenimiento y organización de la plataforma, y supervisar el catálogo de dispositivos.
@@ -307,11 +307,6 @@ Como cliente quiero que las consultas habituales del catálogo, precios y dispon
 **R.F.N.04. Compatibilidad**
 
 Como usuario quiero poder utilizar la plataforma desde distintos tamaños de pantalla y navegadores web actuales para poder acceder al servicio tanto desde un ordenador como desde un dispositivo móvil.
-
-**R.N.F. 01. Título requisito no funcional**
-Como [tipo de usuario]
-quiero [servicio]
-para [razón]
 
 -- fin entregable 1 --
 

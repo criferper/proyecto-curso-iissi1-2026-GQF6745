@@ -282,7 +282,15 @@ El precio de un alquiler debe corresponder con una tarifa definida según el mod
 Toda incidencia debe estar asociada al dispositivo en el que se haya detectado. Si se produce durante el alquiler hay que asociar el usuario con la incidencia para realizar su seguimiento.
 
 
-### 4.2. Mapa de historias de usuario (opcional)
+### 4.2. Mapa de historias de usuario
+| **Consultar dispositivos** | **Gestionar alquileres** | **Gestionar mantenimiento y reacondicionamiento** |
+| --- | --- | --- |
+| RF01. Listado de dispositivos disponibles por filtros | RF04. Consulta del alquiler activo de un cliente | RF02. Consulta de alquileres de un dispositivos |
+| RF03. Consulta detallada de un dispositivo | RF06. Listado de alquileres próximo a vencer | RF05. Listado de incidencias abiertas |
+|   |   | RF07. Listado de dispositivos con mayor ciclo de reutilización |
+
+
+ 
 
 ### 4.3. Requisitos no funcionales (opcional)
 

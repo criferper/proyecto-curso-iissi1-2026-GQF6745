@@ -167,7 +167,7 @@ para identificar el desgaste material y planificar su renovación o mantenimient
 - Al acceder al listado de dispositivos con mayor ciclo de reutilización aplicando un filtro por categoría de dispositivos sin resultados disponibles, la plataforma de alquiler muestra un mensaje indicando que no se encontraron coincidencias.
 
 
-#### 4.1.1. Requisitos de información
+### 4.1.1. Requisitos de información
 
 ##### R.I.01. Información de usuarios
 
@@ -280,11 +280,6 @@ El precio de un alquiler debe corresponder con una tarifa definida según el mod
 ##### R.N.08. Asociación de incidencias
 
 Toda incidencia debe estar asociada al dispositivo en el que se haya detectado. Si se produce durante el alquiler hay que asociar el usuario con la incidencia para realizar su seguimiento.
-
-
-
-
-#### 4.1.1. Requisitos de información
 
 
 ### 4.2. Mapa de historias de usuario (opcional)

@@ -1,6 +1,6 @@
-# Título Proyecto
+# ALQUILERES VECA
 
-## Miembros del grupo LX-XXX-X (sustituir)
+## Miembros del grupo L7-XXX-X 
 
 1. Cruz España, Victoria
 1. Gómez Núñez, Elena

@@ -21,25 +21,9 @@ Con este proyecto ofrecemos una solución que proporcione accesibilidad, flexibi
 
 ## 2. Glosario de términos
 
-- Alquiler: tiempo en el cual un usuario tiene temporalmente un dispositivo electrónico a cambio de un precio.
-- Catálogo de dispositivos: lista de los dispositivos electrónicos de la plataforma donde puedes identificarlos y buscar información sobre ellos.
-- Categoría de dispositivos: clasificación según distintas cualidades como el tipo o para lo que es usado.
 - Ciclo de reutilización: periodo en el cual un dispositivo vuelve a ser utilizado, alargando su vida útil.
-- Cliente: persona que dispone de los servicios del alquiler.
-- Condición del dispositivo: estado en el que se encuentra un dispositivo electrónico, tanto físicamente como funcionalmente.
 - Consumo responsable: forma de consumir la cual busca reducir el impacto ambiental siempre satisfaciendo nuestras necesidades pero evitando acciones innecesarias.
-- Devolución: entrega del dispositivo al terminar el tiempo de alquiler.
-- Disponibilidad: situación que dice si un dispositivo puede alquilarse por un tiempo determinado.
-- Dispositivo electrónico: equipo tecnológico que puede alquilarse como pueden ser ordenadores, tables y moviles.
 - Economía circular: modelo económico el cual apuesta por la reutilización, reparación y reacondicionamiento de los dispositivos para poder alargar su vida útil.
-- Historial de alquileres: información sobre la utilización de un determinado dispositivo o los alquileres relacionados con un determinado cliente.
-- Incidencia: problema con un determinado aspecto el cual necesita ser atendido o resuelto.
-- Periodo de alquiler: tiempo en el cual un cliente tiene un dispositivo alquilado.
-- Plataforma de alquiler: sistema informático en el cual podemos acceder a información relacionada con los dispositivos electrónicos y los servicios de alquiler.
-- Precio del alquiler: cantidad económica por el alquiler de un dispositivo durante un tiempo.
-- Reacondicionamiento: revisión de un dispositivo usado que se repara o limpia si es necesario para que vuelva a tener buenas condiciones para su uso.
-- Sostenibilidad: cualidad de satisfacer las necesidades reduciendo el impacto ambiental y mejorando el aprovechamiento responsable de los recursos.
-- Usuario: persona que utiliza los servicios de la plataforma.
 - Vida útil: periodo en el cual un dispositivo puede seguir utilizándose.
 
 ## 3. Visión general del sistema
@@ -66,24 +50,11 @@ RG-6: Gestión centralizada de la información: el sistema organzará la informa
 
 Podemos encontrar tres tipos de usuarios: cliente, técnico de reacondicionamiento y administrador de la plataforma.
 
-CLIENTE:
-El cliente es la persona que hace uso de la plataforma para buscar dispositivos de acuerdo a sus necesidades. Este usuario está asociado principalmente a estudiantes tanto de formación profesional como universitarios ya que son los que más tecnologías suelen necesitar, y jóvenes que están comenzando su vida laboral.
+CLIENTE: Persona que consulta el catálogo y utiliza los servicios.
 
-Sus principales necesidades son consultar el catálogo de dispositivos disponibles, conocer toda la información de los dispositivos, comparar distintos dispositivos y precios, y comprobar disponibilidad de dispositivos.
+TÉCNICO DE REACONDICIONAMIENTO: Empleado encargado de revisar, reacondicionar y reparar los dispositivos.
 
-El cliente es el usuario final del servicio, el que hace uso de los servicios y sin él no se cumpliría el objetivo de la plataforma.
-
-TÉCNICO DE REACONDICIONAMIENTO:
-El técnico de reacondicionamiento es el responsable de revisar el estado de los dispositivos y comprobar su funcionamiento. Si se detectase una avería en un dispositivo, el técnico de reacondicionamiento es el encargado de repararlo y comprobar que funcione bien de nuevo.
-
-Sus principales necesidades son consultar el estado de los dispositivos, determinar si necesita reparación o puede ofrecerse al cliente, y conocer las incidencias detectadas.
-
-ADMINISTRADOR DE LA PLATAFORMA:
-El administrador de la plataforma es el responsable de supervisar la plataforma y comprobar que funcione correctamente y no le falta ninguna información, así como los accesos que tiene cada usuario en la plataforma.
-
-Sus principales necesidades son consultar la información tanto de dispositivos como alquileres, garantizar que todos los usuarios puedan acceder a la información que les corresponden, facilitar el mantenimiento y organización de la plataforma, y supervisar el catálogo de dispositivos.
-
-El administrador de la plataforma necesita tener la información organizada y actualizada para mayor facilidad de seguimiento tanto de dispositivos como de alquileres.
+ADMINISTRADOR DE LA PLATAFORMA: Empleado encargado de gestionar la información y actualizarla
 
 ## 4. Catálogo de requisitos
 

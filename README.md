@@ -91,7 +91,8 @@ El administrador de la plataforma necesita tener la información organizada y ac
 
 ### R.F.01 Listado de dispositivos disponibles por filtros
 
-Como cliente 
+**Como** cliente
+
 quiero consultar el listado de dispositivos disponibles aplicando filtros de categoría y marca
 para encontrar un dispositivo que se adapte a misnnecesidades.
 
@@ -102,7 +103,7 @@ para encontrar un dispositivo que se adapte a misnnecesidades.
 
 ### R.F.02 Consulta de alquileres de un dispositivo
 
-Como técnico de reaccondicionamiento
+**Como** técnico de reaccondicionamiento
 quiero consultar el historial de alquileres de un dispositivo concreto
 para conocer su trayectoria de uso previa y evaluar su estado de desgate antes de volver a estar disponible en la plataforma de alquiler.
 
@@ -113,7 +114,7 @@ para conocer su trayectoria de uso previa y evaluar su estado de desgate antes d
 
 ### R.F.03. Consulta detallada de un dispositivo
 
-Como cliente
+**Como** cliente
 quiero consultar los detalles de un dispositivo concreto, incluyendo sus características, precio y disponibilidad,
 para ver si se ajusta a mis necesidades.
 
@@ -124,7 +125,7 @@ para ver si se ajusta a mis necesidades.
 
 ### R.F.04. Listado de alquileres activos de un cliente
 
-Como administrador de la plataforma
+**Como** administrador de la plataforma
 quiero saber el listado de alquileres de un cliente concreto,
 para poder informarle lo antes posible sobre el estado de los equipos actuales o resolverle cualquier duda sobre sus alquileres en curso. 
 
@@ -135,7 +136,7 @@ para poder informarle lo antes posible sobre el estado de los equipos actuales o
 
 ### R.F.05. Listado de incidencias abiertas
 
-Como técnico de reacondicionamiento
+**Como** técnico de reacondicionamiento
 quiero saber el listado de incidencias abiertas de los diferentes dispositivos
 para solucionarlas lo antes posible y evitar que afecten a alquileres futuros
 
@@ -146,7 +147,7 @@ para solucionarlas lo antes posible y evitar que afecten a alquileres futuros
 
 ### R.F.06. Listado de alquileres próximos a vencer
 
-Como administrador de la plataforma
+**Como** administrador de la plataforma
 quiero saber el listado de alquileres que se encuentran próximos a vencer 
 para ponerme en contacto con los clientes y gestionar la renovación o recogida de los dispositivos antes de que finalice el contrato
 
@@ -157,7 +158,7 @@ para ponerme en contacto con los clientes y gestionar la renovación o recogida 
 
 ### R.F.07. Listado de dispositivos con mayor ciclo de reutilización
 
-Como técnico de reacondicionamiento
+**Como** técnico de reacondicionamiento
 quiero consultar el listado de dispositivos con mayor ciclo de reutilización
 para identificar el desgaste material y planificar su renovación o mantenimiento.
 

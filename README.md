@@ -60,7 +60,7 @@ ADMINISTRADOR DE LA PLATAFORMA: Empleado encargado de gestionar la información 
 
 ### 4.1. Requisitos funcionales
 
-### R.F.01 Listado de dispositivos disponibles por filtros
+### R.F.01 Dispositivos disponibles
 
 **Como** cliente
 
@@ -68,76 +68,122 @@ quiero consultar el listado de dispositivos disponibles aplicando filtros de cat
 para encontrar un dispositivo que se adapte a mis necesidades.
 
 **Prueba de aceptación**
-- Con tres portátiles de la marca Lenovo y uno HP disponibles en el sistema, al aplicar el filtro de categoría 'portátil' y de la marca 'HP', la plataforma muestra únicamente el dispositivo HP disponible.
-- Al realizar el mismo filtro de categoría 'portátil' y marca 'HP', comprobar que los dispositivos con esos filtros que se encuentran en estado 'alquilado' o 'en mantenimiento' no aparecen en el listado.
-- Al filtrar por una combinación de categoría y marca que no tiene dispositivo disponible en ese momento el sistema devuelve una lista vacía y un mensaje indicando que no hay dispositivos disponibles en ese momento, el sistema devuelve una lista vacía y un mensaje indicando que no hay dispositivos disponibles para esos filtros.
+-Se debe comprobar que el cliente pueda **consultar** los dispositivos disponibles para el alquiler.
+-Se debe comprobar que el sistema muestre un **listado** con los dispositivos disponibles.
+-Se debe comprobar que el cliente pueda **filtrar** los dispositivos por categoría y marca.
+-Se debe comprobar que los dispositivos alquilados, el mantenimiento o dados de baja no aparaezcan en el **listado** de dispositivos disponibles.
+-Se debe comprobar que al realizar el **limpiado** de los filtros aplicados, vuelvan a mostrarse todos los recursos tecnológicos disponibles.
+-Se debe comprobar que, si ningún dispositivos cumple los filtros seleccionados el sistema muestre un **listado** vacío e informe de que no existen resultados.
 
-### R.F.02 Consulta de alquileres de un dispositivo
+### R.F.02 Historial de alquileres de un dispositivo
 
-**Como** técnico de reaccondicionamiento
+**Como** técnico de reacondicionamiento
 quiero consultar el historial de alquileres de un dispositivo concreto
 para conocer su trayectoria de uso previa y evaluar su estado de desgate antes de volver a estar disponible en la plataforma de alquiler.
 
 **Prueba de aceptación**
-- Con un dispositivo seleccionado que tiene alquileres previos registrados, al consultar su historial, el sistema muestra el listado cronológico de sus usos anteriores, junto con las condiciones en las que fue devuelto.
-- Al consultar el historial de un dispositivo concreto, la plataforma muestra únicamente la información correspondiente a ese equipo, sin mezclar datos de otros dispositivos.
-- Al consultar el historial de un dispositivo que nunca ha sido alquilado, la plataforma muestra un mensaje indicando que el dispositivo no cuenta con alquileres previos.
 
-### R.F.03. Consulta detallada de un dispositivo
+-Se debe comprobar que el técnico pueda realizar la consulta del historial de alquileres de un dispositivo concreto.
+-Se debe comprobar que el sistema muestre un listado de los alquileres realizados anteriormente con dichos dispositivos.
+-Se debe comprobar que el listado de alquileres aparezca ordenado cronológicamente.
+-Se debe comprobar que, mediante la consulta del historial pueda conocerse la condición en la que fue devuelto el recurso electrónico en cada alquiler finalizado.
+-Se debe comprobar que si el dispositivo nunca ha sido alquilado, el sistema muestre un sistema vacío e informe de que no existen alquileres anteriores.
+-Si se utilizan criterios para localizar un dispositivo, se debe comprobar que su limpiado permite realizar una nueva busqueda.
+
+### R.F.03. Información de un dispositivo
 
 **Como** cliente
 quiero consultar los detalles de un dispositivo concreto, incluyendo sus características, precio y disponibilidad,
 para ver si se ajusta a mis necesidades.
 
-**Prueba de acepatción**
-- En la plataforma hay registrado un portátil HP con 8GB de RAM, estado 'disponible', y un precio de 15€/día, cuando es seleccionado por el cliente, la plataforma muestra en pantalla sus características técnicas, su disponibilidad y precio.
-- Si un cliente trata de acceder a los detalles de un dispositivo que ha sido dado de baja, el sistema no muestra los datos y avisa con un mensaje de que ya no se encuentra disponible.
-- Si un dispositivo activo tiene alguna característica opcional o algún dato sin rellenar, el sistema muestra la ficha correctamente indicando correctamente el valor como 'No especificado' en en dicho campo, sin interrumpir la visualización del resto de la información.
+**Prueba de acepatción** PREGUNTAR AL PROFESOR
+-Se debe comprobar que el cliente pueda realizar la consulta del dispositivo seleccionado, y que durante esta se muestren las características correspondientes al modelo del dispositivo.
+-Se debe comprobar que durante la consulta se muestre el precio del alquiler correspondiente.
+-Se debe comprobar que durante la consulta se indique si el dispositivo se encuentre disponible para alquiler.
+-Se debe comprobar que, cuando una característica opcional no tenga información registrada, la consulta pueda realizarse correctamente mostrando dicha información como no especificada.
+-Se debe comprobar que un dispositivo dado de baja no aparezca como disponible para el alquiler.
 
-### R.F.04. Listado de alquileres activos de un cliente
+### R.F.04. Alquiler activo en un cliente
 
 **Como** administrador de la plataforma
 quiero saber el listado de alquileres de un cliente concreto,
 para poder informarle lo antes posible sobre el estado de los equipos actuales o resolverle cualquier duda sobre sus alquileres en curso. 
 
 **Prueba de aceptación**
-- Dado un cliente registrado posee alquileres activos, al consultar su expediente, la plataforma muestra el listado detallado de todos sus dispositivos alquilados actualmente junto con los plazos de devolución y su estado.
-- Al consultar la ficha de un cliente registrado que no tiene alquileres activos, la plataforma devuelve la lista vacía y muestra un mensaje indicando que el cliente no cuenta con ningún alquiler en curso.
-- Al ingresar los datos de un cliente que no existe en la plataforma o buscar un dispositivo que no se encuentra registrado en la plataforma, esta genera un mensaje especificando que el usuario o dispositivo no está registrado.
+- Se debe comprobar que el administrador pueda realzar la consulta de un alquiler activo de un cliente rgeistrado.
+- Se debe comprobar que en la consulta se muestre el dispositivo alquilado y la información necesaria para el realizar el seguimiento del alquiler.
+- Se debe comprobar que el alquiler mostrado en la consulta corresponde al cliente seleccionado.
+- Se debe comprobar que, si se intenta realizar la consulta de un cliente no registrado, el sistema informa de que el cliente no existe.
+- Si existen criterios de búsqueda del cliente se debe comprobar que su limpiado permita realizar una nueva consulta.
 
-### R.F.05. Listado de incidencias abiertas
+### R.F.05. Incidencias abiertas
 
 **Como** técnico de reacondicionamiento
 quiero saber el listado de incidencias abiertas de los diferentes dispositivos
-para solucionarlas lo antes posible y evitar que afecten a alquileres futuros
+para solucionarlas lo antes posible y evitar que afecten a alquileres futuros.
 
 **Prueba de aceptación**
-- Al acceder al apartado de incidencias de la plataforma, el sistema muestra el listado de incidencias reportadas actualmente, permitiéndole identificar qué dispositivos requieren intervención.
-- Al intentar filtrar el registro de incidencias de un dispositivo que no se encuentra en la base de datos de la plataforma y este muestra un mensaje de error que indica que no existe el dispositivo.
-- Al acceder al listado de incidencias abiertas cuando no hay reportes de incidencias, la plataforma muestra una lista vacía y genera un mensaje indicando que no hay ninguna incidencia abierta.
+- Se debe comprobar que el técnico pueda realizar la consulta de incidencias que se encuentran abiertas.
+- Se debe comprobar que el sistema muestre un listado de las incidencias abiertas y el dispositivo al que corresponde cada uno.
+- Se debe comprobar que el técnico pueda filtrar el listado para consultar las incidencias abiertas de un dispositivo concreto.
+- Se debe comprobar que, si se intenta realizar la consulta de un dispositivo que no existe, el sistema informe de que no se encuentra registrado.
+- Se debe comprobar que, si no existen incidencias abiertas, el sistema muestre un listado vacío en forme de dicha sistuación.
+- Se debe comprobar que, al realizar el limpiado de los filtros utilizados, vuelvan a mostrarse todas las incidencias abiertas.
 
-### R.F.06. Listado de alquileres próximos a vencer
+### R.F.06. Alquileres próximos a vencer
 
 **Como** administrador de la plataforma
 quiero saber el listado de alquileres que se encuentran próximos a vencer 
 para ponerme en contacto con los clientes y gestionar la renovación o recogida de los dispositivos antes de que finalice el contrato
 
 **Pruebas de acepatción**
-- Al acceder a los listados de alquileres próximos a vencer para llevar un control diario, la plataforma muestra correctamente los contratos más próximos a vencer, permitiendo identificar a los clientes correspondientes para gestionar la renovación o recogida de los dispositivos.
-- Al introducir un rango de fechas no válido, el sistema muestra un mensaje de error indicando que el filtro es erróneo y no permite realizar la búsqueda.
-- Al acceder a los listados de alquileres próximos a vencer cuando no hay contratos que expiren en el periodo indicado, el sistema muestra una lista vacía, indicando que no hay ningún alquiler próximo a vencer.
+- Se debe comprobar que el administrador pueda realizar la consulta de los alquileres cuya fecha prevista de finalización se encuentre próxima.
+- Se debe comprobar que el sistema muestre un listado de los alquileres próximos a vencer junto con el cliente y dispositivos correspondientes.
+- Se debe comprobar que el administrador pueda filtrar el listado mediante un intervalo de fechas.
+- Se debe comrpobar que el sistema impida realizar la consulta cuando el rango de fechas no sea válido.
+- Se debe comprobar que, si ningún alquiler finaliza dentro del periodo seleccionado,el sistema muestra un listado vacío.
+- Se debe comprobar que, al realizar el limpiado del intervalo o de los filtros utilizados, la consulta vuelva a su estado inicial.
 
-### R.F.07. Listado de dispositivos con mayor ciclo de reutilización
+### R.F.07. Dispositivos con mayor reutilización
 
 **Como** técnico de reacondicionamiento
 quiero consultar el listado de dispositivos con mayor ciclo de reutilización
 para identificar el desgaste material y planificar su renovación o mantenimiento.
 
 **Pruebas de aceptación**
-- Al acceder al listado de dispositivos con mayor ciclo de reutilización para revisar el estado de los dispositivos, la plataforma de alquiler los muestra correctamente ordenados por su nivel de uso, indicando claramente cuáles requieren mantenimiento y cuáles sustitución.
-- Al acceder al listado de dispositivos con mayor ciclo de reutilización consultando un dispositivo que no se encuentra en la plataforma de alquiler, esta muestra un mensaje indicando que no se encontraron resultados para la búsqueda.
-- Al acceder al listado de dispositivos con mayor ciclo de reutilización aplicando un filtro por categoría de dispositivos sin resultados disponibles, la plataforma de alquiler muestra un mensaje indicando que no se encontraron coincidencias.
+- Se debe comprobar que el técnico pueda realizar la consulta del número de alquileres realizados por cada dispositivo.
+- Se debe comprobar que el sistema muestre un listado de dispositivos ordenados de mayor a menor según su número de alquileres.
+- Se debe comprobar que el técnico pueda filtrar el listado por categoría de dispositivo.
+- Se debe comprobar que, si ningún dispositivo cumple los criterios seleccionados, el sistema muestre un listado vacío e informe de que no existen resultados.
+- Se debe comprobar que, al realizar el limpiado de los filtros aplicados, vuelva a mostrar se el listado completo.
 
+### R.F.08. Gestionar dispositivos
+
+**Como** administrador de la plataforma,
+quiero dar de alta, consultar, modificar y dar de baja dispositivos 
+para mantener actualizado el catálogo de equipos disponibles en la plataforma.
+
+**Pruebas de aceptación**
+-Se debe comprobar que el administrador pueda realizar el alta de un nuevo dispositivo introduciendo sus datos obligatorios.
+-Se debe comprobar que el administrador pueda realizar la consulta de un dispositivo registrado.
+-Se debe comprobar que el sistema permita obtener un listado de los dispositivos registrados.
+-Se debe comprobar que el administrador pueda realizar a modificación de los datos permitidos de un dispositivo.
+-Se debe comprobar que el administrador pueda realizar la baja de un dispositivo cuando corresponda, y que una vez dado de baja deje de aparecer en el listado de dispositivos disponibles para alquiler.
+-Si se utilizan criterios de búsqueda se debe comprobar que el limpiado de los filtros permita volver a visualizar todos los recursos tecnológicos.
+
+### R.F.09. Gestionar alquileres
+
+**Como** administrador de la plataforma,
+quiero registrar, consultar y actualizar los alquileres de los dispositivos
+para controlar que dispositivos se encuentran alquilados y durante que periodo.
+
+**Pruebas de aceptación**
+-Se debe comprobar que el administrador pueda realizar el registro de un nuevo alquiler indicando el cliente, el dispositivo y el periodo correspondiente.
+-Se debe comprobar que el administrador pueda realizar la consulta de un alquiler registrado.
+-Se debe comprobar que el sistema permita obtener un listado de los alquileres registrados.
+-Se debe comprobar que el administrador pueda realizar la modificación de los datos permitidos de un alquiler.
+-Se debe comprobar que no pueda realizarse el registro de un alquiler para un dispositivo que no se encuentra disponible.
+-Se debe comprobar que no pueda realizarse el registro de un nuevo alquiler para un cliente que ya tenga un alquiler activo.
 
 ### 4.1.1. Requisitos de información
 

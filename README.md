@@ -30,21 +30,37 @@ Con este proyecto ofrecemos una solución que proporcione accesibilidad, flexibi
 
 ### 3.1. Requisitos generales
 
-La finalidad de la plataforma es dar un servicio de alquiler de dispositivos electrónicos reacondicionados. El sistema recogerá la información de los dispositivos y facilitará su consulta.
+**R.G.01. Consultar el catálogo de dispositivos**
 
-Conforma a esto, establecemos los siguientes requisitos generales.
+Como cliente,
 
-RG-1: Acceso asequible a la tecnología: el sistema facilitará un acceso temporal a dispositivos reacondicionados como alternativa de la compra de unos nuevos.
+quiero consultar los dispositivos electrónicos ofrecidos por la plataforma,
 
-RG-2: Consulta del catálogo de dispositivos: los usuarios podrán ver los dispositivos del catálogo y sus características principales.
+para conocer sus características y disponibilidad y encontrar el dispositivo que mejor se adapte a mis necesidades.
 
-RG-3: Información sobre disponibilidad y precios: el sistema ofrece información clara y actualizada sobre el precio y disponibilidad de los dispositivos. 
+**R.G.02. Gestionar los dispositivos**
 
-RG-4: Flexibilidad de uso: el sistema facilitará información para que los usuarios puedan encontrar dispositivos adaptados a sus necesidades y el tiempo que lo necesitan.
+Como administrador de la plataforma,
 
-RG-5: Fomento de la sostenibilidad: el sistema incitará a la reutilización de dispositivos reacondicionados para reducir la necesidad de comprar dispositivos nuevos.
+quiero gestionar los dispositivos registrados en el sistema,
 
-RG-6: Gestión centralizada de la información: el sistema organzará la información importante sobre los dispositivos, clientes y alquileres para poder facilitar su consulta y mantenimiento.
+para mantener actualizado el catálogo de equipos ofrecidos por la plataforma.
+
+**R.G.03. Gestionar los alquileres y devoluciones**
+
+Como administrador de la plataforma,
+
+quiero gestionar los alquileres y devoluciones de los dispositivos,
+
+para controlar qué dispositivos se encuentran alquilados, sus periodos de alquiler y su posterior devolución.
+
+**R.G.04. Gestionar el mantenimiento de los dispositivos**
+
+Como técnico de reacondicionamiento,
+
+quiero gestionar el mantenimiento y seguimiento de los dispositivos,
+
+para controlar sus incidencias, reacondicionamientos y estados tras su utilización.
 
 ### 3.2. Usuarios del sistema
 

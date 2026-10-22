@@ -184,6 +184,7 @@ para controlar que dispositivos se encuentran alquilados y durante que periodo.
 -Se debe comprobar que el administrador pueda realizar la modificación de los datos permitidos de un alquiler.
 -Se debe comprobar que no pueda realizarse el registro de un alquiler para un dispositivo que no se encuentra disponible.
 -Se debe comprobar que no pueda realizarse el registro de un nuevo alquiler para un cliente que ya tenga un alquiler activo.
+-Si existen filtros de búsqueda, se debe comprobar que su limpiado permita volver a visualizar todos los alquileres.
 
 ### 4.1.1. Requisitos de información
 

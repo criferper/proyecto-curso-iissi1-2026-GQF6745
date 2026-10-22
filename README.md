@@ -351,37 +351,41 @@ Como técnico de reacondicionamiento, quiero conocer la información sobre las i
 
 ### 4.1.2. Reglas de negocio
 
-#### R.N.01. No solapamiento de alquileres
+#### R.N.01. Ausencia de solapamiento entre alquileres
 
 Un mismo dispositivo no puede estar asociado a dos alquileres en periodos que coincidan. Para realizar un nuevo alquiler, el dispositivo debe encontrarse disponible durante todo el periodo.
 
 #### R.N.02. Estado adecuado para el alquiler
 
-Un dispositivo solo puede ser alquilado cuando se encuentre en las condiciones necesarias para su uso. Si necesita una revisión o reparación no podrán ofrecerse hasta que se compruebe nuevamente su correcto funcionamiento.
+Un dispositivo solo puede ser alquilado cuando se encuentre disponible y en las condiciones necesarias para su uso. Si necesita una revisión o reparación no podrán ofrecerse hasta que se compruebe nuevamente su correcto funcionamiento.
 
-#### R.N.03. Un único alquiler activo por cliente
+#### R.N.03. Límite de alquileres activos por cliente
 
-Un cliente solo podrá realizar un alquiler a la vez. Para alquilar otro dispositivo deberá haber finalizado y devuelto el anterior.
+Un cliente solo podrá realizar un alquiler activo al mismo tiempo. Para alquilar otro dispositivo deberá haber finalizado y devuelto el anterior.
 
-#### R.N.04. Validez del periodo de alquiler 
+#### R.N.04. Periodo de alquiler válido 
 
-La fecha de finalización prevista debe ser posterior a su fecha de inicio. El periodo de alquiler debe corresponder con una de las modalidades ofrecidas por la plataforma.
+La fecha de finalización prevista debe ser posterior a su fecha de inicio y debe corresponder a uno de los periodos de alquiler establecidos.
 
-#### R.N.05. Devolución asociada a un alquiler
+#### R.N.05. Una devolución por  alquiler
 
 Toda devolución debe estar asociada a un alquiler previamente registrado. Un alquiler solo debe tener una devolución asociada.
 
-#### R.N.06. Revisión antes de volver a ofrecer un dispositivo
+#### R.N.06. Dispositivo con incidencia
 
-Cuando se presente una incidencia que afecte al correcto funcionamiento, no volverá a estar disponible hasta que haya sido revisado y el técnico de reacondicionamiento determine que puede volver a su uso.
+Cuando se presente una incidencia que afecte al correcto funcionamiento de un dispositivo electrónico, este no volverá a estar disponible hasta que haya sido revisado y el técnico de reacondicionamiento determine que puede volver a su uso.
 
-#### R.N.07. Aplicación de tarifas
+#### R.N.07. Precio de alquiler
 
 El precio de un alquiler debe corresponder con una tarifa definida según el modelo y el alquiler seleccionado.
 
 #### R.N.08. Asociación de incidencias
 
-Toda incidencia debe estar asociada al dispositivo en el que se haya detectado. Si se produce durante el alquiler hay que asociar el usuario con la incidencia para realizar su seguimiento.
+Toda incidencia debe estar asociada al dispositivo electrónico. Si se produce durante el alquiler, también quedará asociada a dicho alquiler.
+
+#### R.N.09. Baja de dispositivos
+
+No podrá darse de baja un dispositivo mientras se encuentre asociado a un alquiler activo.
 
 
 ### 4.2. Mapa de historias de usuario
@@ -394,21 +398,45 @@ Toda incidencia debe estar asociada al dispositivo en el que se haya detectado. 
 
 ### 4.3. Requisitos no funcionales 
 
-**R.N.F.01. Facilidad de uso**
+**R.N.F.01. Usabilidad**
 
-Como cliente quiero que la plataforma tenga una interfaz clara e intuitiva para poder consultar los dispositivos, precios y disponibilidad de forma sencilla.
+Como cliente 
 
-**R.N.F.02. Seguridad de acceso** 
+quiero que la plataforma tenga una interfaz clara e intuitiva
 
-Como administrador de la plataforma quiero que cada tipo de usuario pueda acceder únicamente a la información y funciones que le correspondan para evitar accesos no autorizados dentro de la plataforma.
+para poder consultar los dispositivos, precios y disponibilidad de forma sencilla.
 
-**R.N.F.03. Tiempo de respuesta**
+**R.N.F.02. Rendimiento**
 
-Como cliente quiero que las consultas habituales del catálogo, precios y disponibilidad se muestren en un tiempo máximo de tres segundos para poder utilizar la plataforma de forma fluida.
+Como cliente,
 
-**R.F.N.04. Compatibilidad**
+quiero que las consultas y listados habituales respondan en un tiempo máximo de 3 segundos en condiciones normales de funcionamiento,
 
-Como usuario quiero poder utilizar la plataforma desde distintos tamaños de pantalla y navegadores web actuales para poder acceder al servicio tanto desde un ordenador como desde un dispositivo móvil.
+para poder utilizar la plataforma de forma fluida.
+
+**R.N.F.03. Seguridad** 
+
+Como cliente,
+
+quiero que el acceso a las funciones de la plataforma este protegido según el tipo de usuario,
+
+para evitar operaciones no autorizadas.
+
+**R.N.F.04. Fiabilidad**
+
+Como cliente,
+
+quiero que la información registrada sobre dispositivos, alquileres, devoluciones, incidencias y reacondicionamientos se mantenga íntegra y consistente, 
+
+para poder confiar en los datos almacenados.
+
+**R.F.N.05. Compatibilidad**
+
+Como usuario
+
+quiero poder utilizar la plataforma desde distintos dispositivos y navegadores web actuales
+
+para poder acceder al servicio independientemente del equipo utilizado.
 
 -- fin entregable 1 --
 

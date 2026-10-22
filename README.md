@@ -186,6 +186,40 @@ para controlar que dispositivos se encuentran alquilados y durante que periodo.
 -Se debe comprobar que no pueda realizarse el registro de un nuevo alquiler para un cliente que ya tenga un alquiler activo.
 -Si existen filtros de búsqueda, se debe comprobar que su limpiado permita volver a visualizar todos los alquileres.
 
+### R.F.10. Gestionar devoluciones
+
+**Como** administrador de la plataforma,
+quiero registrar, consultar y actualizar las devoluciones de los dispositivos alquilados,
+para controlar la finalización de los alquileres y el estado en el que se devuelven los dispositivos.
+
+**Pruebas de aceptación**
+-Se debe comprobar que el administrador pueda realizar el registro de una devolución asociada a un alquiler existente.
+-Se debe comprobar que pueda realizar la consulta de una devolución registrada.
+-Se debe comprobar que el sistema permita obtener un listado de las devoluciones realizadas.
+-Se debe comprobar que el administrador pueda realizar la modificación de los datos permitidos de una devolución.
+-Se debe comprobar que no pueda realizarse el registro de una segunda devolución para un alquiler que ya tenga una devolución asociada.
+-Se debe comprobar que, al realizar el registro de la devolución, el alquiler correspondiente quede identificado como finalizado.
+-Si existen filtros de búsqueda, se debe comprobar que su limpiado permita volver a mostrar todas las devoluciones.
+
+### R.F.11. Gestionar incidencias
+
+**Como** técnico de reacondicionamiento,
+quiero registrar, consultar, modificar y cerrar las incidencias de los dispositivos,
+para controlar los problemas detectados y realizar su seguimiento hasta que sean solucionados.
+
+**Pruebas de aceptación**
+-Se debe comprobar que el técnico pueda realizar el registro de una nueva incidencia asociada a un dispositivo.
+-Se debe comprobar que el sistema permita obtener un listado de las incidencias.
+-Se debe comprobar que el técnico pueda realizar la consulta de una incidencia registrada.
+-Se debe comprobar que el técnico pueda realizar la modificación de la información de una incidencia mientras permanezca abierta.
+-Se debe comprobar que el técnico pueda realizar el cierre de una incidencia cuando el problema haya sido solucionado.
+-Se debe comprobar que una incidencia tras su cierre deje de aparecer en el listado de indicencias abiertas.
+-Si se utilizan criterios de búsqueda, se debe comprobar que el limpiado de los filtros permita volver a visualizar todas las incidencias correspondientes.
+
+### R.F.12. Gestionar reacondicionamientos
+
+**Pruebas de aceptación**
+
 ### 4.1.1. Requisitos de información
 
 #### R.I.01. Información de usuarios

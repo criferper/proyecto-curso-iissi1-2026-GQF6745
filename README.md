@@ -395,29 +395,11 @@ Un dispositivo solo puede ser alquilado cuando se encuentre disponible y en las 
 
 Un cliente solo podrá realizar un alquiler activo al mismo tiempo. Para alquilar otro dispositivo deberá haber finalizado y devuelto el anterior.
 
-#### R.N.04. Periodo de alquiler válido 
-
-La fecha de finalización prevista debe ser posterior a su fecha de inicio y debe corresponder a uno de los periodos de alquiler establecidos.
-
-#### R.N.05. Una devolución por  alquiler
-
-Toda devolución debe estar asociada a un alquiler previamente registrado. Un alquiler solo debe tener una devolución asociada.
-
-#### R.N.06. Dispositivo con incidencia
+#### R.N.04. Dispositivo con incidencia
 
 Cuando se presente una incidencia que afecte al correcto funcionamiento de un dispositivo electrónico, este no volverá a estar disponible hasta que haya sido revisado y el técnico de reacondicionamiento determine que puede volver a su uso.
 
-#### R.N.07. Precio de alquiler
-
-El precio de un alquiler debe corresponder con una tarifa definida según el modelo y el alquiler seleccionado.
-
-#### R.N.08. Asociación de incidencias
-
-Toda incidencia debe estar asociada al dispositivo electrónico. Si se produce durante el alquiler, también quedará asociada a dicho alquiler.
-
-#### R.N.09. Baja de dispositivos
-
-No podrá darse de baja un dispositivo mientras se encuentre asociado a un alquiler activo.
+### R.N.03.
 
 
 ### 4.2. Mapa de historias de usuario

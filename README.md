@@ -273,7 +273,11 @@ para mantener un historial de las intervenciones realizadas y conocer el estado 
 
 #### R.I.01. Información de usuarios
 
-Como administrador de la plataforma, quiero disponer de la información de los usuarios registrados. Esta información incluye su nombre, apellidos, correo electrónico, contraseña, teléfono, para poder conocer cada caso dentro de la plataforma.
+Como administrador de la plataforma,
+
+quiero disponer de la información de los usuarios registrados. Esta información incluye su nombre, apellidos, correo electrónico, usuario, contraseña, teléfono,
+
+para poder conocer cada caso dentro de la plataforma.
 
 **Prueba de aceptación**
 - Registrar un cliente indicando nombre, apellidos, correo electrónico y contraseña, para que toda la información se almacene correctamente.
@@ -283,7 +287,11 @@ Como administrador de la plataforma, quiero disponer de la información de los u
 
 #### R.I.02. Información de modelos y características de dispositivos
 
-Como cliente, quiero tener al alcance la información de todos los tipos de recursos electrónicos disponibles en el catálogo, incluyendo su marca, modelo, categoría, descripción y características principales, para comparar estos dispositivos y ver cual se adapta mejor a lo que necesito.
+Como cliente,
+
+quiero tener al alcance la información de todos los tipos de recursos electrónicos disponibles en el catálogo, incluyendo su marca, modelo, categoría, descripción y características principales, 
+
+para comparar estos dispositivos y ver cual se adapta mejor a lo que necesito.
 
 **Prueba de aceptación**
 - Registrar cada modelo de recurso tecnológico indicando su marca, modelo y categoría, y verificar que la información se almacena correctamente.
@@ -292,7 +300,11 @@ Como cliente, quiero tener al alcance la información de todos los tipos de recu
 
 #### R.I.03. Información de dispositivos
 
-Como técnico de reacondicionamiento, quiero tener a mano la información sobre el estado, condición y disponibilidad de cada dispositivo, dependiendo de su modelo, para saber cual está preparado para ser alquilado o si necesita ser revisado o reparado.
+Como técnico de reacondicionamiento,
+
+quiero tener a mano la información sobre el estado, condición y disponibilidad de cada dispositivo, dependiendo de su modelo,
+
+para saber cual está preparado para ser alquilado o si necesita ser revisado o reparado.
 
 **Prueba de aceptación**
 - Registrar cada aparato electrónico asocicado a un modelo y comprobar que quede almacenado correctamente.
@@ -302,7 +314,11 @@ Como técnico de reacondicionamiento, quiero tener a mano la información sobre 
 
 #### R.I.04. Información de tarifas
 
-Como cliente, quiero tener la información de las tarifas de cada dispositivo electrónico, incluyendo el periodo de alquiler y su precio, para poder saber el coste de alquiler y elegir la mejor opción para mí.
+Como cliente,
+
+quiero tener la información de las tarifas de cada dispositivo electrónico, incluyendo el periodo de alquiler y su precio,
+
+para poder saber el coste de alquiler y elegir la mejor opción para mí.
 
 **Prueba de aceptación**
 - Registrar cada tarifa indicando su periodo de alquiler y precio, y comprobar que la información corresponde a su modelo.
@@ -311,7 +327,11 @@ Como cliente, quiero tener la información de las tarifas de cada dispositivo el
 
 #### R.I.05. Información de alquileres
 
-Como administrador de la plataforma, quiero conocer los alquileres realizados, junto al cliente que realiza el alquiler , el dispositivo alquilado, periodo y precio correspondiente, para poder hacer un seguimiento de los alquileres gestionados por la plataforma.
+Como administrador de la plataforma,
+
+quiero conocer los alquileres realizados, junto al cliente que realiza el alquiler , el dispositivo alquilado, periodo y precio correspondiente,
+
+para poder hacer un seguimiento de los alquileres gestionados por la plataforma.
 
 **Prueba de aceptación**
 - Asociar un alquiler a un cliente y dispositivo, y almacenar la información.
@@ -321,7 +341,11 @@ Como administrador de la plataforma, quiero conocer los alquileres realizados, j
 
 #### R.I.06. Información de devoluciones
 
-Como administrador de la plataforma, quiero conocer la información relacionada con la devolución de los dispositivos alquilados, incluyendo la fecha de devolución y la condición en la que se entrega, para comprobar que el alquiler ha finalizado correctamente y mantener actualizada la información.
+Como administrador de la plataforma,
+
+quiero conocer la información relacionada con la devolución de los dispositivos alquilados, incluyendo la fecha de devolución y la condición en la que se entrega,
+
+para comprobar que el alquiler ha finalizado correctamente y mantener actualizada la información.
 
 **Prueba de aceptación**
 - Registrar una devolución asociada a un alquiler y vincularla correctamente.
@@ -331,7 +355,11 @@ Como administrador de la plataforma, quiero conocer la información relacionada 
 
 #### R.I.07. Información de reacondicionamientos
 
-Como técnico de reacondicionamiento, quiero disponer de la información sobre los reacondicionamientos realizados a los dispositivos, incluyendo el dispositivo afectado, las averías y los problemas detectados, y la condición resultante del aparato electrónico, para comprobar si puede volver a ofrecerse en alquiler.
+Como técnico de reacondicionamiento,
+
+quiero disponer de la información sobre los reacondicionamientos realizados a los dispositivos, incluyendo el dispositivo afectado, las averías y los problemas detectados, y la condición resultante del aparato electrónico,
+
+para comprobar si puede volver a ofrecerse en alquiler.
 
 **Prueba de aceptación**
 - Registrar un reacondicionamiento asociado a un recurso electrónico y vincularlo.
@@ -341,7 +369,11 @@ Como técnico de reacondicionamiento, quiero disponer de la información sobre l
 
 #### R.I.08. Información de incidencias
 
-Como técnico de reacondicionamiento, quiero conocer la información sobre las incidencias detectadas en los aparatos tecnológicos, incluyendo el dispositivo afectado, la descripción del problema, el estado de la incidencia y el alquiler durante el cual se produjo, para poder hacer un seguimiento y asegurar que el problema se ha resuelto.
+Como técnico de reacondicionamiento,
+
+quiero conocer la información sobre las incidencias detectadas en los aparatos tecnológicos, incluyendo el dispositivo afectado, la descripción del problema, el estado de la incidencia y el alquiler durante el cual se produjo,
+
+para poder hacer un seguimiento y asegurar que el problema se ha resuelto.
 
 **Prueba de aceptación**
 - Registrar cada incidencia y vincularla al dispositivo.

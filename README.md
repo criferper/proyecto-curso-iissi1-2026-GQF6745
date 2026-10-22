@@ -65,70 +65,79 @@ ADMINISTRADOR DE LA PLATAFORMA: Empleado encargado de gestionar la información 
 **Como** cliente
 
 quiero consultar el listado de dispositivos disponibles aplicando filtros de categoría y marca
+
 para encontrar un dispositivo que se adapte a mis necesidades.
 
 **Prueba de aceptación**
--Se debe comprobar que el cliente pueda **consultar** los dispositivos disponibles para el alquiler.
--Se debe comprobar que el sistema muestre un **listado** con los dispositivos disponibles.
--Se debe comprobar que el cliente pueda **filtrar** los dispositivos por categoría y marca.
--Se debe comprobar que los dispositivos alquilados, el mantenimiento o dados de baja no aparaezcan en el **listado** de dispositivos disponibles.
--Se debe comprobar que al realizar el **limpiado** de los filtros aplicados, vuelvan a mostrarse todos los recursos tecnológicos disponibles.
--Se debe comprobar que, si ningún dispositivos cumple los filtros seleccionados el sistema muestre un **listado** vacío e informe de que no existen resultados.
+- Se debe comprobar que el cliente pueda **consultar** los dispositivos disponibles para el alquiler.
+- Se debe comprobar que el sistema muestre un **listado** con los dispositivos disponibles.
+- Se debe comprobar que el cliente pueda **filtrar** los dispositivos por categoría y marca.
+- Se debe comprobar que los dispositivos alquilados, el mantenimiento o dados de baja no aparaezcan en el **listado** de dispositivos disponibles.
+- Se debe comprobar que al realizar el **limpiado** de los filtros aplicados, vuelvan a mostrarse todos los recursos tecnológicos disponibles.
+- Se debe comprobar que, si ningún dispositivos cumple los filtros seleccionados el sistema muestre un **listado** vacío e informe de que no existen resultados.
 
 ### R.F.02 Historial de alquileres de un dispositivo
 
 **Como** técnico de reacondicionamiento
+
 quiero consultar el historial de alquileres de un dispositivo concreto
+
 para conocer su trayectoria de uso previa y evaluar su estado de desgate antes de volver a estar disponible en la plataforma de alquiler.
 
 **Prueba de aceptación**
 
--Se debe comprobar que el técnico pueda realizar la consulta del historial de alquileres de un dispositivo concreto.
--Se debe comprobar que el sistema muestre un listado de los alquileres realizados anteriormente con dichos dispositivos.
--Se debe comprobar que el listado de alquileres aparezca ordenado cronológicamente.
--Se debe comprobar que, mediante la consulta del historial pueda conocerse la condición en la que fue devuelto el recurso electrónico en cada alquiler finalizado.
--Se debe comprobar que si el dispositivo nunca ha sido alquilado, el sistema muestre un sistema vacío e informe de que no existen alquileres anteriores.
--Si se utilizan criterios para localizar un dispositivo, se debe comprobar que su limpiado permite realizar una nueva busqueda.
+-Se debe comprobar que el técnico pueda realizar la **consulta** del historial de alquileres de un dispositivo concreto.
+-Se debe comprobar que el sistema muestre un **listado** de los alquileres realizados anteriormente con dichos dispositivos.
+-Se debe comprobar que el **listado** de alquileres aparezca ordenado cronológicamente.
+-Se debe comprobar que, mediante la **consulta** del historial pueda conocerse la condición en la que fue devuelto el recurso electrónico en cada alquiler finalizado.
+-Se debe comprobar que si el dispositivo nunca ha sido alquilado, el sistema muestre un **listado** vacío e informe de que no existen alquileres anteriores.
+-Si se utilizan criterios para localizar un dispositivo, se debe comprobar que su **limpiado** permite realizar una nueva búsqueda.
 
 ### R.F.03. Información de un dispositivo
 
 **Como** cliente
+
 quiero consultar los detalles de un dispositivo concreto, incluyendo sus características, precio y disponibilidad,
+
 para ver si se ajusta a mis necesidades.
 
 **Prueba de acepatción** PREGUNTAR AL PROFESOR
--Se debe comprobar que el cliente pueda realizar la consulta del dispositivo seleccionado, y que durante esta se muestren las características correspondientes al modelo del dispositivo.
--Se debe comprobar que durante la consulta se muestre el precio del alquiler correspondiente.
--Se debe comprobar que durante la consulta se indique si el dispositivo se encuentre disponible para alquiler.
--Se debe comprobar que, cuando una característica opcional no tenga información registrada, la consulta pueda realizarse correctamente mostrando dicha información como no especificada.
--Se debe comprobar que un dispositivo dado de baja no aparezca como disponible para el alquiler.
+-Se debe comprobar que el cliente pueda realizar la **consulta** del dispositivo seleccionado, y que durante esta se muestren las características correspondientes al modelo del dispositivo.
+-Se debe comprobar que durante la **consulta** se muestre el precio del alquiler correspondiente.
+-Se debe comprobar que durante la **consulta** se indique si el dispositivo se encuentre disponible para alquiler.
+-Se debe comprobar que, cuando una característica opcional no tenga información registrada, la **consulta** pueda realizarse correctamente mostrando dicha información como no especificada.
+-Se debe comprobar que un dispositivo dado de **baja** no aparezca como disponible para el alquiler.
 
 ### R.F.04. Alquiler activo en un cliente
 
 **Como** administrador de la plataforma
+
 quiero saber el listado de alquileres de un cliente concreto,
+
 para poder informarle lo antes posible sobre el estado de los equipos actuales o resolverle cualquier duda sobre sus alquileres en curso. 
 
 **Prueba de aceptación**
-- Se debe comprobar que el administrador pueda realzar la consulta de un alquiler activo de un cliente rgeistrado.
-- Se debe comprobar que en la consulta se muestre el dispositivo alquilado y la información necesaria para el realizar el seguimiento del alquiler.
-- Se debe comprobar que el alquiler mostrado en la consulta corresponde al cliente seleccionado.
-- Se debe comprobar que, si se intenta realizar la consulta de un cliente no registrado, el sistema informa de que el cliente no existe.
-- Si existen criterios de búsqueda del cliente se debe comprobar que su limpiado permita realizar una nueva consulta.
+- Se debe comprobar que el administrador pueda realzar la **consulta** de un alquiler activo de un cliente registrado.
+- Se debe comprobar que en la **consulta** se muestre el dispositivo alquilado y la información necesaria para el realizar el seguimiento del alquiler.
+- Se debe comprobar que el alquiler mostrado en la **consulta** corresponde al cliente seleccionado.
+- Se debe comprobar que, si se intenta realizar la **consulta** de un cliente no registrado, el sistema informa de que el cliente no existe.
+- Si existen criterios de búsqueda del cliente se debe comprobar que su **limpiado** permita realizar una nueva consulta.
 
 ### R.F.05. Incidencias abiertas
 
 **Como** técnico de reacondicionamiento
+
 quiero saber el listado de incidencias abiertas de los diferentes dispositivos
+
 para solucionarlas lo antes posible y evitar que afecten a alquileres futuros.
 
 **Prueba de aceptación**
-- Se debe comprobar que el técnico pueda realizar la consulta de incidencias que se encuentran abiertas.
-- Se debe comprobar que el sistema muestre un listado de las incidencias abiertas y el dispositivo al que corresponde cada uno.
-- Se debe comprobar que el técnico pueda filtrar el listado para consultar las incidencias abiertas de un dispositivo concreto.
-- Se debe comprobar que, si se intenta realizar la consulta de un dispositivo que no existe, el sistema informe de que no se encuentra registrado.
-- Se debe comprobar que, si no existen incidencias abiertas, el sistema muestre un listado vacío en forme de dicha sistuación.
-- Se debe comprobar que, al realizar el limpiado de los filtros utilizados, vuelvan a mostrarse todas las incidencias abiertas.
+- Se debe comprobar que el técnico pueda realizar la **consulta** de incidencias que se encuentran abiertas.
+- Se debe comprobar que el sistema muestre un **listado** de las incidencias abiertas y el dispositivo al que corresponde cada uno.
+- Se debe comprobar que el técnico pueda **filtrar** el listado para consultar las incidencias abiertas de un dispositivo concreto.
+- Se debe comprobar que, si se intenta realizar la **consulta** de un dispositivo que no existe, el sistema informe de que no se encuentra registrado.
+- Se debe comprobar que, si no existen incidencias abiertas, el sistema muestre un **listado** vacío en forme de dicha situación.
+- Se debe comprobar que, al realizar el **limpiado** de los filtros utilizados, vuelvan a mostrarse todas las incidencias abiertas.
 
 ### R.F.06. Alquileres próximos a vencer
 
@@ -137,88 +146,112 @@ quiero saber el listado de alquileres que se encuentran próximos a vencer
 para ponerme en contacto con los clientes y gestionar la renovación o recogida de los dispositivos antes de que finalice el contrato
 
 **Pruebas de acepatción**
-- Se debe comprobar que el administrador pueda realizar la consulta de los alquileres cuya fecha prevista de finalización se encuentre próxima.
-- Se debe comprobar que el sistema muestre un listado de los alquileres próximos a vencer junto con el cliente y dispositivos correspondientes.
-- Se debe comprobar que el administrador pueda filtrar el listado mediante un intervalo de fechas.
-- Se debe comrpobar que el sistema impida realizar la consulta cuando el rango de fechas no sea válido.
-- Se debe comprobar que, si ningún alquiler finaliza dentro del periodo seleccionado,el sistema muestra un listado vacío.
-- Se debe comprobar que, al realizar el limpiado del intervalo o de los filtros utilizados, la consulta vuelva a su estado inicial.
+- Se debe comprobar que el administrador pueda realizar la **consulta** de los alquileres cuya fecha prevista de finalización se encuentre próxima.
+- Se debe comprobar que el sistema muestre un **listado** de los alquileres próximos a vencer junto con el cliente y dispositivos correspondientes.
+- Se debe comprobar que el administrador pueda **filtrar** el listado mediante un intervalo de fechas.
+- Se debe comprobar que el sistema impida realizar la **consulta** cuando el rango de fechas no sea válido.
+- Se debe comprobar que, si ningún alquiler finaliza dentro del periodo seleccionado,el sistema muestra un **listado** vacío.
+- Se debe comprobar que, al realizar el **limpiado** del intervalo o de los filtros utilizados, la consulta vuelva a su estado inicial.
 
 ### R.F.07. Dispositivos con mayor reutilización
 
 **Como** técnico de reacondicionamiento
+
 quiero consultar el listado de dispositivos con mayor ciclo de reutilización
+
 para identificar el desgaste material y planificar su renovación o mantenimiento.
 
 **Pruebas de aceptación**
-- Se debe comprobar que el técnico pueda realizar la consulta del número de alquileres realizados por cada dispositivo.
-- Se debe comprobar que el sistema muestre un listado de dispositivos ordenados de mayor a menor según su número de alquileres.
-- Se debe comprobar que el técnico pueda filtrar el listado por categoría de dispositivo.
-- Se debe comprobar que, si ningún dispositivo cumple los criterios seleccionados, el sistema muestre un listado vacío e informe de que no existen resultados.
-- Se debe comprobar que, al realizar el limpiado de los filtros aplicados, vuelva a mostrar se el listado completo.
+- Se debe comprobar que el técnico pueda realizar la **consulta** del número de alquileres realizados por cada dispositivo.
+- Se debe comprobar que el sistema muestre un **listado** de dispositivos ordenados de mayor a menor según su número de alquileres.
+- Se debe comprobar que el técnico pueda **filtrar** el listado por categoría de dispositivo.
+- Se debe comprobar que, si ningún dispositivo cumple los criterios seleccionados, el sistema muestre un **listado** vacío e informe de que no existen resultados.
+- Se debe comprobar que, al realizar el **limpiado** de los filtros aplicados, vuelva a mostrar se el listado completo.
 
 ### R.F.08. Gestionar dispositivos
 
 **Como** administrador de la plataforma,
+
 quiero dar de alta, consultar, modificar y dar de baja dispositivos 
+
 para mantener actualizado el catálogo de equipos disponibles en la plataforma.
 
 **Pruebas de aceptación**
--Se debe comprobar que el administrador pueda realizar el alta de un nuevo dispositivo introduciendo sus datos obligatorios.
--Se debe comprobar que el administrador pueda realizar la consulta de un dispositivo registrado.
--Se debe comprobar que el sistema permita obtener un listado de los dispositivos registrados.
--Se debe comprobar que el administrador pueda realizar a modificación de los datos permitidos de un dispositivo.
--Se debe comprobar que el administrador pueda realizar la baja de un dispositivo cuando corresponda, y que una vez dado de baja deje de aparecer en el listado de dispositivos disponibles para alquiler.
--Si se utilizan criterios de búsqueda se debe comprobar que el limpiado de los filtros permita volver a visualizar todos los recursos tecnológicos.
+- Se debe comprobar que el administrador pueda realizar el **alta** de un nuevo dispositivo introduciendo sus datos obligatorios.
+- Se debe comprobar que el administrador pueda realizar la **consulta** de un dispositivo registrado.
+- Se debe comprobar que el sistema permita obtener un **listado** de los dispositivos registrados.
+- Se debe comprobar que el administrador pueda realizar a **modificación** de los datos permitidos de un dispositivo.
+- Se debe comprobar que el administrador pueda realizar la **baja** de un dispositivo cuando corresponda, y que una vez dado de baja deje de aparecer en el listado de dispositivos disponibles para alquiler.
+- Si se utilizan criterios de búsqueda se debe comprobar que el **limpiado** de los filtros permita volver a visualizar todos los recursos tecnológicos.
 
 ### R.F.09. Gestionar alquileres
 
 **Como** administrador de la plataforma,
+
 quiero registrar, consultar y actualizar los alquileres de los dispositivos
+
 para controlar que dispositivos se encuentran alquilados y durante que periodo.
 
 **Pruebas de aceptación**
--Se debe comprobar que el administrador pueda realizar el registro de un nuevo alquiler indicando el cliente, el dispositivo y el periodo correspondiente.
--Se debe comprobar que el administrador pueda realizar la consulta de un alquiler registrado.
--Se debe comprobar que el sistema permita obtener un listado de los alquileres registrados.
--Se debe comprobar que el administrador pueda realizar la modificación de los datos permitidos de un alquiler.
--Se debe comprobar que no pueda realizarse el registro de un alquiler para un dispositivo que no se encuentra disponible.
--Se debe comprobar que no pueda realizarse el registro de un nuevo alquiler para un cliente que ya tenga un alquiler activo.
--Si existen filtros de búsqueda, se debe comprobar que su limpiado permita volver a visualizar todos los alquileres.
+- Se debe comprobar que el administrador pueda realizar el **registro** de un nuevo alquiler indicando el cliente, el dispositivo y el periodo correspondiente.
+- Se debe comprobar que el administrador pueda realizar la **consulta** de un alquiler registrado.
+- Se debe comprobar que el sistema permita obtener un **listado** de los alquileres registrados.
+- Se debe comprobar que el administrador pueda realizar la **modificación** de los datos permitidos de un alquiler.
+- Se debe comprobar que no pueda realizarse el **registro** de un alquiler para un dispositivo que no se encuentra disponible.
+- Se debe comprobar que no pueda realizarse el **registro** de un nuevo alquiler para un cliente que ya tenga un alquiler activo.
+- Si existen filtros de búsqueda, se debe comprobar que su **limpiado** permita volver a visualizar todos los alquileres.
 
 ### R.F.10. Gestionar devoluciones
 
 **Como** administrador de la plataforma,
+
 quiero registrar, consultar y actualizar las devoluciones de los dispositivos alquilados,
+
 para controlar la finalización de los alquileres y el estado en el que se devuelven los dispositivos.
 
 **Pruebas de aceptación**
--Se debe comprobar que el administrador pueda realizar el registro de una devolución asociada a un alquiler existente.
--Se debe comprobar que pueda realizar la consulta de una devolución registrada.
--Se debe comprobar que el sistema permita obtener un listado de las devoluciones realizadas.
--Se debe comprobar que el administrador pueda realizar la modificación de los datos permitidos de una devolución.
--Se debe comprobar que no pueda realizarse el registro de una segunda devolución para un alquiler que ya tenga una devolución asociada.
--Se debe comprobar que, al realizar el registro de la devolución, el alquiler correspondiente quede identificado como finalizado.
--Si existen filtros de búsqueda, se debe comprobar que su limpiado permita volver a mostrar todas las devoluciones.
+-Se debe comprobar que el administrador pueda realizar el **registro** de una devolución asociada a un alquiler existente.
+-Se debe comprobar que pueda realizar la **consulta** de una devolución registrada.
+-Se debe comprobar que el sistema permita obtener un **listado** de las devoluciones realizadas.
+-Se debe comprobar que el administrador pueda realizar la **modificación** de los datos permitidos de una devolución.
+-Se debe comprobar que no pueda realizarse el **registro** de una segunda devolución para un alquiler que ya tenga una devolución asociada.
+-Se debe comprobar que, al realizar el **registro** de la devolución, el alquiler correspondiente quede identificado como finalizado.
+-Si existen filtros de búsqueda, se debe comprobar que su **limpiado** permita volver a mostrar todas las devoluciones.
 
 ### R.F.11. Gestionar incidencias
 
 **Como** técnico de reacondicionamiento,
+
 quiero registrar, consultar, modificar y cerrar las incidencias de los dispositivos,
+
 para controlar los problemas detectados y realizar su seguimiento hasta que sean solucionados.
 
 **Pruebas de aceptación**
--Se debe comprobar que el técnico pueda realizar el registro de una nueva incidencia asociada a un dispositivo.
--Se debe comprobar que el sistema permita obtener un listado de las incidencias.
--Se debe comprobar que el técnico pueda realizar la consulta de una incidencia registrada.
--Se debe comprobar que el técnico pueda realizar la modificación de la información de una incidencia mientras permanezca abierta.
--Se debe comprobar que el técnico pueda realizar el cierre de una incidencia cuando el problema haya sido solucionado.
--Se debe comprobar que una incidencia tras su cierre deje de aparecer en el listado de indicencias abiertas.
--Si se utilizan criterios de búsqueda, se debe comprobar que el limpiado de los filtros permita volver a visualizar todas las incidencias correspondientes.
+- Se debe comprobar que el técnico pueda realizar el **registro** de una nueva incidencia asociada a un dispositivo.
+- Se debe comprobar que el sistema permita obtener un **listado** de las incidencias.
+- Se debe comprobar que el técnico pueda realizar la **consulta** de una incidencia registrada.
+- Se debe comprobar que el técnico pueda realizar la **modificación** de la información de una incidencia mientras permanezca abierta.
+- Se debe comprobar que el técnico pueda realizar el **cierre** de una incidencia cuando el problema haya sido solucionado.
+- Se debe comprobar que una incidencia tras su **cierre** deje de aparecer en el listado de incidencias abiertas.
+- Si se utilizan criterios de búsqueda, se debe comprobar que el **limpiado** de los filtros permita volver a visualizar todas las incidencias correspondientes.
 
 ### R.F.12. Gestionar reacondicionamientos
 
+Como técnico de reacondicionamiento,
+
+quiero registrar, consultar y actualizar los reacondicionamientos realizados sobre los dispositivos,
+
+para mantener un historial de las intervenciones realizadas y conocer el estado de cada equipo.
+
 **Pruebas de aceptación**
+
+- Se debe comprobar que el técnico pueda realizar el **registro** de un reacondicionamiento asociado a un dispositivo.
+- Se debe comprobar que pueda realizar la **consulta** de un reacondicionamiento registrado.
+- Se debe comprobar que el sistema permita obtener un **listado** de los reacondicionamientos realizados.
+- Se debe comprobar que el técnico pueda realizar la **modificación** de los datos permitidos de un reacondicionamiento.
+- Se debe comprobar que cada reacondicionamiento quede asociado al dispositivo sobre el que se ha realizado.
+- Se debe comprobar que mediante la **consulta** pueda conocerse el estado resultante del dispositivo después del reacondicionamiento.
+- Si existen criterios de búsqueda, se debe comprobar que su **limpiado** permita volver a mostrar todos los reacondicionamientos.
 
 ### 4.1.1. Requisitos de información
 

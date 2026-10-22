@@ -280,10 +280,10 @@ quiero disponer de la información de los usuarios registrados. Esta informació
 para poder conocer cada caso dentro de la plataforma.
 
 **Prueba de aceptación**
-- Registrar un cliente indicando nombre, apellidos, correo electrónico y contraseña, para que toda la información se almacene correctamente.
-- Registrar un usuario sin número de teléfono y comprobar que se guarden bien los datos.
-- Registrar un técnico de reacondicionamiento y comprobar que quede identificado como corresponde.
-- Registrar un administrador de la plataforma y comprobar que esté diferenciado del resto de usuarios.
+- Se debe comprobar que cada usuario tenga un identificador único.
+- Se debe comprobar que se almacenen su nombre, apellidos, correo electrónico, teléfono y tipo de usuario.
+- Se debe comprobar que un usuario pueda estar identificado como cliente, administrador o técnico de reacondicionamiento.
+- Se debe comprobar que la información de un usuario registrado pueda consultarse posteriormente.
 
 #### R.I.02. Información de modelos y características de dispositivos
 
@@ -294,9 +294,9 @@ quiero tener al alcance la información de todos los tipos de recursos electrón
 para comparar estos dispositivos y ver cual se adapta mejor a lo que necesito.
 
 **Prueba de aceptación**
-- Registrar cada modelo de recurso tecnológico indicando su marca, modelo y categoría, y verificar que la información se almacena correctamente.
-- Comprobar que las características descritas y los modelos correspondientes son verídicos.
-- Registrar modelos de distintas categorías, como portátil, móvil y tablet, y comprobar que quedan clasificados correctamente.
+- Se debe comprobar que cada modelo tenga un identificador único.
+- Se debe comprobar que se almacenen la marca, nombre del modelo, categoría, descripción y características correspondientes.
+- Se debe comprobar que la información del modelo pueda mostrarse cuando se consulta un dispositivo.
 
 #### R.I.03. Información de dispositivos
 
@@ -307,10 +307,11 @@ quiero tener a mano la información sobre el estado, condición y disponibilidad
 para saber cual está preparado para ser alquilado o si necesita ser revisado o reparado.
 
 **Prueba de aceptación**
-- Registrar cada aparato electrónico asocicado a un modelo y comprobar que quede almacenado correctamente.
-- Registrar la condición o estado de un dispositivo y asegurarse que todos los usuarios puedan acceder a verlo.
-- Modificar el estado del equipo cuando necesite una reparación y actualizar la información en la página.
-- Consultar si los dispositivos aparecen como disponibles o no disponibles para su alquiler.
+- Se debe comprobar que cada dispositivo tenga un identificador único.
+- Se debe comprobar que cada dispositivo este asociado a un modelo existente.
+- Se debe comprobar que se almacenen su condición y su estado.
+- Se debe comprobar que el estado permita conocer si el dispositivo se encuentra disponible, alquilado, en mantenimiento o dado de baja.
+- Se debe comprobar que la información almacenada permita determinar si el dispositivo puede aparecer entre los dispositivos disponibles.
 
 #### R.I.04. Información de tarifas
 
@@ -321,9 +322,10 @@ quiero tener la información de las tarifas de cada dispositivo electrónico, in
 para poder saber el coste de alquiler y elegir la mejor opción para mí.
 
 **Prueba de aceptación**
-- Registrar cada tarifa indicando su periodo de alquiler y precio, y comprobar que la información corresponde a su modelo.
-- Asociar cada tarifa a un modelo y comprobar que quede relacionada con el dispositivo al que corresponde.
-- Registrar distintas tarifas para diferentes periodos de alquiler.
+- Se debe comprobar que cada tarifa tenga un identificador único.
+- Se debe comprobar que se almacene el periodo de alquiler correspondiente.
+- Se debe comprobar que se almacena el precio de la tarifa.
+- Se debe comprobar que pueda determinarse qué tarifa corresponde al dispositivo y periodo seleccionados.
 
 #### R.I.05. Información de alquileres
 
@@ -334,10 +336,13 @@ quiero conocer los alquileres realizados, junto al cliente que realiza el alquil
 para poder hacer un seguimiento de los alquileres gestionados por la plataforma.
 
 **Prueba de aceptación**
-- Asociar un alquiler a un cliente y dispositivo, y almacenar la información.
-- Registrar el periodo de alquiler.
-- Registrar el precio de cada alquiler para poder consultarlo posteriormente.
-- Consultar el historial de alquileres.
+- Se debe comprobar que cada alquiler tenga un identificador único.
+- Se debe comprobar que cada alquiler este asociado a un cliente registrado.
+- Se debe comprobar que cada alquiler este asociado a un dispositivo registrado.
+- Se debe comprobar que se almacenen la fecha de inicio y la fecha prevista de finalización.
+- Se debe comprobar que se almacenen la tarifa y el precio aplicados.
+- Se debe comprobar que pueda conocerse si el alquiler se encuentra activo o finalizado.
+- Se debe comprobar que la información almacenada permita consultar los alquileres próximos a vencer.
 
 #### R.I.06. Información de devoluciones
 
@@ -348,10 +353,12 @@ quiero conocer la información relacionada con la devolución de los dispositivo
 para comprobar que el alquiler ha finalizado correctamente y mantener actualizada la información.
 
 **Prueba de aceptación**
-- Registrar una devolución asociada a un alquiler y vincularla correctamente.
-- Registrar la fecha de devolución y comprobar su correcta almacenación.
-- Registrar el estado en el que se devuelve el dispositivo y actualizarlo para consultarlo posteriormente.
-- Registrar el alquiler finalizado asociado a su devolución correspondiente.
+- Se debe comprobar que cada devolución tenga un identificador único.
+- Se debe comprobar que cada devolución este asociada a un alquiler existente.
+- Se debe comprobar que se almacene la fecha en la que se realizó la devolución.
+- Se debe comprobar que se registre la condición del dispositivo al ser devuelto.
+- Se debe comprobar que puedan almacenarse observaciones sobre la devolución.
+- Se debe comprobar que la información de la devolución pueda consultarse posteriormente.
 
 #### R.I.07. Información de reacondicionamientos
 
@@ -362,10 +369,12 @@ quiero disponer de la información sobre los reacondicionamientos realizados a l
 para comprobar si puede volver a ofrecerse en alquiler.
 
 **Prueba de aceptación**
-- Registrar un reacondicionamiento asociado a un recurso electrónico y vincularlo.
-- Registrar los problemas o averías detectados durante la revisión.
-- Registrar las actuaciones realizadas sobre el dispositivo y comprobar que se pueden consultar.
-- Consultar el reacondicionamiento y comprobar que se muestra su condición tras la reparación o revisión.
+- se debe comprobar que cada incidencia tenga un identificador único.
+- Se debe comprobar que cada incidencia este asociada a un dispositivo existente.
+- Se debe comprobar que se almacenen la descripción y la fecha de apertura.
+- Se debe comprobar que pueda conocerse si la incidencia permanece abierta o está cerrada.
+- Se debe comprobar que la fecha de cierre pueda almacenarse cuando la incidencia sea solucionada.
+- Se debe comprobar que, cuando la incidencia se produzca durante un alquiler, pueda quedar asociada al alquiler correspondiente.
 
 #### R.I.08. Información de incidencias
 
@@ -376,10 +385,12 @@ quiero conocer la información sobre las incidencias detectadas en los aparatos 
 para poder hacer un seguimiento y asegurar que el problema se ha resuelto.
 
 **Prueba de aceptación**
-- Registrar cada incidencia y vincularla al dispositivo.
-- Registrar una descripción del problema detectado.
-- Actualizar el estado de una incidencia y almacenar la modificación.
-- Asociar la incidencia ocurrida a un alquiler cuando el problema se haya producido durante dicho alquiler.
+- Se debe comprobar que cada reacondicionamiento tenga un identificador único.
+- Se debe comprobar que este asociado a un dispositivo existente.
+- Se debe comprobar que se almacene la fecha de realización.
+- Se debe comprobar que puedan almacenarse los problemas detectados y las actualizaciones realizadas.
+- Se debe comprobar que se registre el estado resultante del dispositivo.
+- Se debe comprobar que puedan consultarse posteriormente los reacondicionamientos realizados sobre un dispositivo.
 
 ### 4.1.2. Reglas de negocio
 

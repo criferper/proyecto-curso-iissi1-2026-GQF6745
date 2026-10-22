@@ -65,7 +65,7 @@ ADMINISTRADOR DE LA PLATAFORMA: Empleado encargado de gestionar la información 
 **Como** cliente
 
 quiero consultar el listado de dispositivos disponibles aplicando filtros de categoría y marca
-para encontrar un dispositivo que se adapte a misnnecesidades.
+para encontrar un dispositivo que se adapte a mis necesidades.
 
 **Prueba de aceptación**
 - Con tres portátiles de la marca Lenovo y uno HP disponibles en el sistema, al aplicar el filtro de categoría 'portátil' y de la marca 'HP', la plataforma muestra únicamente el dispositivo HP disponible.

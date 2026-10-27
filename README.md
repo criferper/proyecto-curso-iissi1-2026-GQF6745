@@ -32,35 +32,35 @@ Con este proyecto ofrecemos una solución que proporcione accesibilidad, flexibi
 
 **R.G.01. Consultar el catálogo de dispositivos**
 
-Como cliente,
+**Como** cliente,
 
-quiero consultar los dispositivos electrónicos ofrecidos por la plataforma,
+**quiero** consultar los dispositivos electrónicos ofrecidos por la plataforma,
 
-para conocer sus características y disponibilidad y encontrar el dispositivo que mejor se adapte a mis necesidades.
+**para** conocer sus características y disponibilidad y encontrar el dispositivo que mejor se adapte a mis necesidades.
 
 **R.G.02. Gestionar los dispositivos**
 
-Como administrador de la plataforma,
+**Como** administrador de la plataforma,
 
-quiero gestionar los dispositivos registrados en el sistema,
+**quiero** gestionar los dispositivos registrados en el sistema,
 
-para mantener actualizado el catálogo de equipos ofrecidos por la plataforma.
+**para** mantener actualizado el catálogo de equipos ofrecidos por la plataforma.
 
 **R.G.03. Gestionar los alquileres y devoluciones**
 
-Como administrador de la plataforma,
+**Como** administrador de la plataforma,
 
-quiero gestionar los alquileres y devoluciones de los dispositivos,
+**quiero** gestionar los alquileres y devoluciones de los dispositivos,
 
-para controlar qué dispositivos se encuentran alquilados, sus periodos de alquiler y su posterior devolución.
+**para** controlar qué dispositivos se encuentran alquilados, sus periodos de alquiler y su posterior devolución.
 
 **R.G.04. Gestionar el mantenimiento de los dispositivos**
 
-Como técnico de reacondicionamiento,
+**Como** técnico de reacondicionamiento,
 
-quiero gestionar el mantenimiento y seguimiento de los dispositivos,
+**quiero** gestionar el mantenimiento y seguimiento de los dispositivos,
 
-para controlar sus incidencias, reacondicionamientos y estados tras su utilización.
+**para** controlar sus incidencias, reacondicionamientos y estados tras su utilización.
 
 ### 3.2. Usuarios del sistema
 
@@ -80,9 +80,9 @@ ADMINISTRADOR DE LA PLATAFORMA: Empleado encargado de gestionar la información 
 
 **Como** cliente
 
-quiero consultar el listado de dispositivos disponibles aplicando filtros de categoría y marca
+**quiero** consultar el listado de dispositivos disponibles aplicando filtros de categoría y marca
 
-para encontrar un dispositivo que se adapte a mis necesidades.
+**para** encontrar un dispositivo que se adapte a mis necesidades.
 
 **Prueba de aceptación**
 - Se debe comprobar que el cliente pueda **consultar** los dispositivos disponibles para el alquiler.
@@ -96,9 +96,9 @@ para encontrar un dispositivo que se adapte a mis necesidades.
 
 **Como** técnico de reacondicionamiento
 
-quiero consultar el historial de alquileres de un dispositivo concreto
+**quiero** consultar el historial de alquileres de un dispositivo concreto
 
-para conocer su trayectoria de uso previa y evaluar su estado de desgate antes de volver a estar disponible en la plataforma de alquiler.
+**para** conocer su trayectoria de uso previa y evaluar su estado de desgate antes de volver a estar disponible en la plataforma de alquiler.
 
 **Prueba de aceptación**
 
@@ -113,9 +113,9 @@ para conocer su trayectoria de uso previa y evaluar su estado de desgate antes d
 
 **Como** cliente
 
-quiero consultar los detalles de un dispositivo concreto, incluyendo sus características, precio y disponibilidad,
+**quiero** consultar los detalles de un dispositivo concreto, incluyendo sus características, precio y disponibilidad,
 
-para ver si se ajusta a mis necesidades.
+**para** ver si se ajusta a mis necesidades.
 
 **Prueba de acepatción** PREGUNTAR AL PROFESOR
 -Se debe comprobar que el cliente pueda realizar la **consulta** del dispositivo seleccionado, y que durante esta se muestren las características correspondientes al modelo del dispositivo.
@@ -128,9 +128,9 @@ para ver si se ajusta a mis necesidades.
 
 **Como** administrador de la plataforma
 
-quiero saber el listado de alquileres de un cliente concreto,
+**quiero** saber el listado de alquileres de un cliente concreto,
 
-para poder informarle lo antes posible sobre el estado de los equipos actuales o resolverle cualquier duda sobre sus alquileres en curso. 
+**para** poder informarle lo antes posible sobre el estado de los equipos actuales o resolverle cualquier duda sobre sus alquileres en curso. 
 
 **Prueba de aceptación**
 - Se debe comprobar que el administrador pueda realzar la **consulta** de un alquiler activo de un cliente registrado.
@@ -143,9 +143,9 @@ para poder informarle lo antes posible sobre el estado de los equipos actuales o
 
 **Como** técnico de reacondicionamiento
 
-quiero saber el listado de incidencias abiertas de los diferentes dispositivos
+**quiero** saber el listado de incidencias abiertas de los diferentes dispositivos
 
-para solucionarlas lo antes posible y evitar que afecten a alquileres futuros.
+**para** solucionarlas lo antes posible y evitar que afecten a alquileres futuros.
 
 **Prueba de aceptación**
 - Se debe comprobar que el técnico pueda realizar la **consulta** de incidencias que se encuentran abiertas.
@@ -158,8 +158,10 @@ para solucionarlas lo antes posible y evitar que afecten a alquileres futuros.
 ### R.F.06. Alquileres próximos a vencer
 
 **Como** administrador de la plataforma
-quiero saber el listado de alquileres que se encuentran próximos a vencer 
-para ponerme en contacto con los clientes y gestionar la renovación o recogida de los dispositivos antes de que finalice el contrato
+
+**quiero** saber el listado de alquileres que se encuentran próximos a vencer 
+
+**para** ponerme en contacto con los clientes y gestionar la renovación o recogida de los dispositivos antes de que finalice el contrato
 
 **Pruebas de acepatción**
 - Se debe comprobar que el administrador pueda realizar la **consulta** de los alquileres cuya fecha prevista de finalización se encuentre próxima.
@@ -173,9 +175,9 @@ para ponerme en contacto con los clientes y gestionar la renovación o recogida 
 
 **Como** técnico de reacondicionamiento
 
-quiero consultar el listado de dispositivos con mayor ciclo de reutilización
+**quiero** consultar el listado de dispositivos con mayor ciclo de reutilización
 
-para identificar el desgaste material y planificar su renovación o mantenimiento.
+**para** identificar el desgaste material y planificar su renovación o mantenimiento.
 
 **Pruebas de aceptación**
 - Se debe comprobar que el técnico pueda realizar la **consulta** del número de alquileres realizados por cada dispositivo.
@@ -188,9 +190,9 @@ para identificar el desgaste material y planificar su renovación o mantenimient
 
 **Como** administrador de la plataforma,
 
-quiero dar de alta, consultar, modificar y dar de baja dispositivos 
+**quiero** dar de alta, consultar, modificar y dar de baja dispositivos 
 
-para mantener actualizado el catálogo de equipos disponibles en la plataforma.
+**para** mantener actualizado el catálogo de equipos disponibles en la plataforma.
 
 **Pruebas de aceptación**
 - Se debe comprobar que el administrador pueda realizar el **alta** de un nuevo dispositivo introduciendo sus datos obligatorios.
@@ -204,9 +206,9 @@ para mantener actualizado el catálogo de equipos disponibles en la plataforma.
 
 **Como** administrador de la plataforma,
 
-quiero registrar, consultar y actualizar los alquileres de los dispositivos
+**quiero** registrar, consultar y actualizar los alquileres de los dispositivos
 
-para controlar que dispositivos se encuentran alquilados y durante que periodo.
+**para** controlar que dispositivos se encuentran alquilados y durante que periodo.
 
 **Pruebas de aceptación**
 - Se debe comprobar que el administrador pueda realizar el **registro** de un nuevo alquiler indicando el cliente, el dispositivo y el periodo correspondiente.
@@ -221,9 +223,9 @@ para controlar que dispositivos se encuentran alquilados y durante que periodo.
 
 **Como** administrador de la plataforma,
 
-quiero registrar, consultar y actualizar las devoluciones de los dispositivos alquilados,
+**quiero** registrar, consultar y actualizar las devoluciones de los dispositivos alquilados,
 
-para controlar la finalización de los alquileres y el estado en el que se devuelven los dispositivos.
+**para** controlar la finalización de los alquileres y el estado en el que se devuelven los dispositivos.
 
 **Pruebas de aceptación**
 -Se debe comprobar que el administrador pueda realizar el **registro** de una devolución asociada a un alquiler existente.
@@ -238,9 +240,9 @@ para controlar la finalización de los alquileres y el estado en el que se devue
 
 **Como** técnico de reacondicionamiento,
 
-quiero registrar, consultar, modificar y cerrar las incidencias de los dispositivos,
+**quiero** registrar, consultar, modificar y cerrar las incidencias de los dispositivos,
 
-para controlar los problemas detectados y realizar su seguimiento hasta que sean solucionados.
+**para** controlar los problemas detectados y realizar su seguimiento hasta que sean solucionados.
 
 **Pruebas de aceptación**
 - Se debe comprobar que el técnico pueda realizar el **registro** de una nueva incidencia asociada a un dispositivo.
@@ -253,11 +255,11 @@ para controlar los problemas detectados y realizar su seguimiento hasta que sean
 
 ### R.F.12. Gestionar reacondicionamientos
 
-Como técnico de reacondicionamiento,
+**Como** técnico de reacondicionamiento,
 
-quiero registrar, consultar y actualizar los reacondicionamientos realizados sobre los dispositivos,
+**quiero** registrar, consultar y actualizar los reacondicionamientos realizados sobre los dispositivos,
 
-para mantener un historial de las intervenciones realizadas y conocer el estado de cada equipo.
+**para** mantener un historial de las intervenciones realizadas y conocer el estado de cada equipo.
 
 **Pruebas de aceptación**
 
@@ -273,11 +275,11 @@ para mantener un historial de las intervenciones realizadas y conocer el estado 
 
 #### R.I.01. Información de usuarios
 
-Como administrador de la plataforma,
+**Como** administrador de la plataforma,
 
-quiero disponer de la información de los usuarios registrados. Esta información incluye su nombre, apellidos, correo electrónico, usuario, contraseña, teléfono,
+**quiero** disponer de la información de los usuarios registrados. Esta información incluye su nombre, apellidos, correo electrónico, usuario, contraseña, teléfono,
 
-para poder conocer cada caso dentro de la plataforma.
+**para** poder conocer cada caso dentro de la plataforma.
 
 **Prueba de aceptación**
 - Se debe comprobar que cada usuario tenga un identificador único.

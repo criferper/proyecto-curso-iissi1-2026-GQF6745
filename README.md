@@ -88,7 +88,7 @@ ADMINISTRADOR DE LA PLATAFORMA: Empleado encargado de gestionar la información 
 - Se debe comprobar que el cliente pueda **consultar** los dispositivos disponibles para el alquiler.
 - Se debe comprobar que el sistema muestre un **listado** con los dispositivos disponibles.
 - Se debe comprobar que el cliente pueda **filtrar** los dispositivos por categoría y marca.
-- Se debe comprobar que los dispositivos alquilados, el mantenimiento o dados de baja no aparaezcan en el **listado** de dispositivos disponibles.
+- Se debe comprobar que los dispositivos alquilados, en mantenimiento o dados de baja no aparaezcan en el **listado** de dispositivos disponibles.
 - Se debe comprobar que al realizar el **limpiado** de los filtros aplicados, vuelvan a mostrarse todos los recursos tecnológicos disponibles.
 - Se debe comprobar que, si ningún dispositivos cumple los filtros seleccionados el sistema muestre un **listado** vacío e informe de que no existen resultados.
 
@@ -103,8 +103,7 @@ ADMINISTRADOR DE LA PLATAFORMA: Empleado encargado de gestionar la información 
 **Prueba de aceptación**
 
 -Se debe comprobar que el técnico pueda realizar la **consulta** del historial de alquileres de un dispositivo concreto.
--Se debe comprobar que el sistema muestre un **listado** de los alquileres realizados anteriormente con dichos dispositivos.
--Se debe comprobar que el **listado** de alquileres aparezca ordenado cronológicamente.
+-Se debe comprobar que el sistema muestre un **listado** de los alquileres realizados anteriormente con dichos dispositivos ordenado cronológicamente.
 -Se debe comprobar que, mediante la **consulta** del historial pueda conocerse la condición en la que fue devuelto el recurso electrónico en cada alquiler finalizado.
 -Se debe comprobar que si el dispositivo nunca ha sido alquilado, el sistema muestre un **listado** vacío e informe de que no existen alquileres anteriores.
 -Si se utilizan criterios para localizar un dispositivo, se debe comprobar que su **limpiado** permite realizar una nueva búsqueda.
@@ -277,36 +276,37 @@ ADMINISTRADOR DE LA PLATAFORMA: Empleado encargado de gestionar la información 
 
 **Como** administrador de la plataforma,
 
-**quiero** disponer de la información de los usuarios registrados. Esta información incluye su nombre, apellidos, correo electrónico, usuario, contraseña, teléfono,
+**quiero** disponer de la información de los usuarios registrados. Esta información incluye su identificador, nombre, apellidos, correo electrónico, contraseña, teléfono, y tipo de usuario
 
-**para** poder conocer cada caso dentro de la plataforma.
+**para** poder conocer a las personas que participan en las operaciones de la plataforma.
 
 **Prueba de aceptación**
 - Se debe comprobar que cada usuario tenga un identificador único.
-- Se debe comprobar que se almacenen su nombre, apellidos, correo electrónico, teléfono y tipo de usuario.
+- Se debe comprobar que se almacenen su nombre, apellidos, correo electrónico, contraseña,  teléfono y tipo de usuario.
 - Se debe comprobar que un usuario pueda estar identificado como cliente, administrador o técnico de reacondicionamiento.
 - Se debe comprobar que la información de un usuario registrado pueda consultarse posteriormente.
 
-#### R.I.02. Información de modelos y características de dispositivos
+#### R.I.02. Información de modelos de dispositivos
 
-Como cliente,
+**Como** administrador de la plataforma,
 
-quiero tener al alcance la información de todos los tipos de recursos electrónicos disponibles en el catálogo, incluyendo su marca, modelo, categoría, descripción y características principales, 
+**quiero** almacenar la información correspondiente a los modelos de dispositivos disponibles en el catálogo, incluyendo su identificador, marca, modelo, categoría, descripción y características principales, 
 
-para comparar estos dispositivos y ver cual se adapta mejor a lo que necesito.
+**para** disponer de la información necesaria para describir los quipos ofrecidos por la plataforma .
 
 **Prueba de aceptación**
 - Se debe comprobar que cada modelo tenga un identificador único.
 - Se debe comprobar que se almacenen la marca, nombre del modelo, categoría, descripción y características correspondientes.
 - Se debe comprobar que la información del modelo pueda mostrarse cuando se consulta un dispositivo.
+- Se debe comprobar que varios dispositivos puedan pertenecer al mismo modelo.
 
 #### R.I.03. Información de dispositivos
 
-Como técnico de reacondicionamiento,
+**Como** administrador de la plataforma,
 
-quiero tener a mano la información sobre el estado, condición y disponibilidad de cada dispositivo, dependiendo de su modelo,
+**quiero** almacenar la información sobre el identificador, estado, condición y disponibilidad de cada dispositivo
 
-para saber cual está preparado para ser alquilado o si necesita ser revisado o reparado.
+**para** controlar individualmente cada unidad física ofrecida por la plataforma.
 
 **Prueba de aceptación**
 - Se debe comprobar que cada dispositivo tenga un identificador único.
@@ -317,11 +317,11 @@ para saber cual está preparado para ser alquilado o si necesita ser revisado o 
 
 #### R.I.04. Información de tarifas
 
-Como cliente,
+**Como** administrador de la plataforma,
 
-quiero tener la información de las tarifas de cada dispositivo electrónico, incluyendo el periodo de alquiler y su precio,
+**quiero** tener la información de las tarifas de cada dispositivo electrónico, incluyendo el identificador, modelo, periodo de alquiler y precio
 
-para poder saber el coste de alquiler y elegir la mejor opción para mí.
+**para** conocer el coste de alquiler correspondiente a cada uno.
 
 **Prueba de aceptación**
 - Se debe comprobar que cada tarifa tenga un identificador único.
@@ -331,11 +331,11 @@ para poder saber el coste de alquiler y elegir la mejor opción para mí.
 
 #### R.I.05. Información de alquileres
 
-Como administrador de la plataforma,
+**Como** administrador de la plataforma,
 
-quiero conocer los alquileres realizados, junto al cliente que realiza el alquiler , el dispositivo alquilado, periodo y precio correspondiente,
+**quiero** almacenar la información correspondiente a los alquileres que incluya su identificador, cliente, dispositivo, fecha de inicio, fecha prevista de finalización, tarifa aplicada, precio y estado del alquiler.
 
-para poder hacer un seguimiento de los alquileres gestionados por la plataforma.
+**para** poder hacer un seguimiento de los alquileres gestionados por la plataforma.
 
 **Prueba de aceptación**
 - Se debe comprobar que cada alquiler tenga un identificador único.
@@ -348,11 +348,11 @@ para poder hacer un seguimiento de los alquileres gestionados por la plataforma.
 
 #### R.I.06. Información de devoluciones
 
-Como administrador de la plataforma,
+**Como** administrador de la plataforma,
 
-quiero conocer la información relacionada con la devolución de los dispositivos alquilados, incluyendo la fecha de devolución y la condición en la que se entrega,
+**quiero** conocer la información relacionada con la devolución de los dispositivos alquilados, incluyendo el identificador, alquiler asociado, la fecha de devolución y la condición en la que se entrega,
 
-para comprobar que el alquiler ha finalizado correctamente y mantener actualizada la información.
+**para** mantener constancia de la finalización de los alquileres y actualizada la información de la plataforma.
 
 **Prueba de aceptación**
 - Se debe comprobar que cada devolución tenga un identificador único.
@@ -364,35 +364,36 @@ para comprobar que el alquiler ha finalizado correctamente y mantener actualizad
 
 #### R.I.07. Información de reacondicionamientos
 
-Como técnico de reacondicionamiento,
+**Como** administrador de la plataforma,
 
-quiero disponer de la información sobre los reacondicionamientos realizados a los dispositivos, incluyendo el dispositivo afectado, las averías y los problemas detectados, y la condición resultante del aparato electrónico,
+**quiero** disponer de la información sobre los reacondicionamientos realizados a los dispositivos, incluyendo el identificador, el dispositivo afectado, fecha, problemas detectados, actualizaciones realizadas y estado resusltante
 
-para comprobar si puede volver a ofrecerse en alquiler.
+**para** mantener un historial de las intervenciones realizadas sobre cada dispositivo.
 
 **Prueba de aceptación**
 - se debe comprobar que cada incidencia tenga un identificador único.
 - Se debe comprobar que cada incidencia este asociada a un dispositivo existente.
-- Se debe comprobar que se almacenen la descripción y la fecha de apertura.
+- Se debe comprobar que se almacene la fecha de realización.
+- Se debe comprobar que puedan almacenarse los problemas detectados y las actuaciones realizadas.
 - Se debe comprobar que pueda conocerse si la incidencia permanece abierta o está cerrada.
-- Se debe comprobar que la fecha de cierre pueda almacenarse cuando la incidencia sea solucionada.
-- Se debe comprobar que, cuando la incidencia se produzca durante un alquiler, pueda quedar asociada al alquiler correspondiente.
+- Se debe comprobar que se registre el estado resultante del sipositivo.
+- Se debe comprobar que puedan consultarse posteriormente los reacondicionamientos realizados sobre un dispositivo.
 
 #### R.I.08. Información de incidencias
 
-Como técnico de reacondicionamiento,
+**Como** administrador de la plataforma,
 
-quiero conocer la información sobre las incidencias detectadas en los aparatos tecnológicos, incluyendo el dispositivo afectado, la descripción del problema, el estado de la incidencia y el alquiler durante el cual se produjo,
+**quiero** conocer la información sobre las incidencias detectadas en los aparatos tecnológicos, incluyendo el dispositivo afectado, la descripción del problema, fecha de apertura, fecha de cierre, el estado de la incidencia y el alquiler durante el cual se produjo
 
-para poder hacer un seguimiento y asegurar que el problema se ha resuelto.
+**para** poder hacer un seguimiento de los problemas detectados en los dispositivos.
 
 **Prueba de aceptación**
 - Se debe comprobar que cada reacondicionamiento tenga un identificador único.
 - Se debe comprobar que este asociado a un dispositivo existente.
-- Se debe comprobar que se almacene la fecha de realización.
-- Se debe comprobar que puedan almacenarse los problemas detectados y las actualizaciones realizadas.
-- Se debe comprobar que se registre el estado resultante del dispositivo.
+- Se debe comprobar que se almacenen la descripción y fecha de apertura de la incidencia.
+- Se debe comprobar que la fecha de cierre pueda almacenarse cuando la incidencia sea solucionada.
 - Se debe comprobar que puedan consultarse posteriormente los reacondicionamientos realizados sobre un dispositivo.
+- Se debe comprobar que, cuando la incidencia se produzca durante un alquiler, pueda quedar asociada al alquiler correspondiente.
 
 ### 4.1.2. Reglas de negocio
 

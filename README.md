@@ -116,7 +116,7 @@ ADMINISTRADOR DE LA PLATAFORMA: Empleado encargado de gestionar la información 
 
 **para** ver si se ajusta a mis necesidades.
 
-**Prueba de acepatción** PREGUNTAR AL PROFESOR
+**Prueba de acepatción**
 -Se debe comprobar que el cliente pueda realizar la **consulta** del dispositivo seleccionado, y que durante esta se muestren las características correspondientes al modelo del dispositivo.
 -Se debe comprobar que durante la **consulta** se muestre el precio del alquiler correspondiente.
 -Se debe comprobar que durante la **consulta** se indique si el dispositivo se encuentre disponible para alquiler.
@@ -252,6 +252,7 @@ ADMINISTRADOR DE LA PLATAFORMA: Empleado encargado de gestionar la información 
 - Se debe comprobar que el técnico pueda realizar el **cierre** de una incidencia cuando el problema haya sido solucionado.
 - Se debe comprobar que una incidencia tras su **cierre** deje de aparecer en el listado de incidencias abiertas.
 - Si se utilizan criterios de búsqueda, se debe comprobar que el **limpiado** de los filtros permita volver a visualizar todas las incidencias correspondientes.
+- Se debe comprobar que al registrar una revisión o incidencia, esta quede conectada con la solicitud previa realizada por el cliente.
 
 ### R.F.12. Gestionar reacondicionamientos
 
@@ -373,11 +374,10 @@ ADMINISTRADOR DE LA PLATAFORMA: Empleado encargado de gestionar la información 
 **para** mantener un historial de las intervenciones realizadas sobre cada dispositivo.
 
 **Prueba de aceptación**
-- se debe comprobar que cada incidencia tenga un identificador único.
-- Se debe comprobar que cada incidencia este asociada a un dispositivo existente.
+- se debe comprobar que cada reacondicionamiento tenga un identificador único.
+- Se debe comprobar que esté asociado a un dispositivo existente.
 - Se debe comprobar que se almacene la fecha de realización.
-- Se debe comprobar que puedan almacenarse los problemas detectados y las actuaciones realizadas.
-- Se debe comprobar que pueda conocerse si la incidencia permanece abierta o está cerrada.
+- Se debe comprobar que puedan almacenarse los problemas detectados y las actuaciones o reparaciones realizadas.
 - Se debe comprobar que se registre el estado resultante del sipositivo.
 - Se debe comprobar que puedan consultarse posteriormente los reacondicionamientos realizados sobre un dispositivo.
 
@@ -433,43 +433,43 @@ Un cliente no podrá realizar más de tres alquileres de dispositivos durante un
 
 **R.N.F.01. Usabilidad**
 
-Como cliente 
+**Como** cliente 
 
-quiero que la plataforma tenga una interfaz clara e intuitiva
+**quiero** que la plataforma tenga una interfaz clara e intuitiva
 
-para poder consultar los dispositivos, precios y disponibilidad de forma sencilla.
+**para** poder consultar los dispositivos, precios y disponibilidad de forma sencilla.
 
 **R.N.F.02. Rendimiento**
 
-Como cliente,
+**Como** cliente,
 
-quiero que las consultas y listados habituales respondan en un tiempo máximo de 3 segundos en condiciones normales de funcionamiento,
+**quiero** que las consultas y listados habituales respondan en un tiempo máximo de 3 segundos en condiciones normales de funcionamiento,
 
-para poder utilizar la plataforma de forma fluida.
+**para** poder utilizar la plataforma de forma fluida.
 
 **R.N.F.03. Seguridad** 
 
-Como cliente,
+**Como** cliente,
 
-quiero que el acceso a las funciones de la plataforma este protegido según el tipo de usuario,
+**quiero** que el acceso a las funciones de la plataforma estÉ protegido según el tipo de usuario,
 
-para evitar operaciones no autorizadas.
+**para** evitar operaciones no autorizadas.
 
 **R.N.F.04. Fiabilidad**
 
-Como cliente,
+**Como** cliente,
 
-quiero que la información registrada sobre dispositivos, alquileres, devoluciones, incidencias y reacondicionamientos se mantenga íntegra y consistente, 
+**quiero** que la información registrada sobre dispositivos, alquileres, devoluciones, incidencias y reacondicionamientos se mantenga íntegra y consistente, 
 
-para poder confiar en los datos almacenados.
+**para** poder confiar en los datos almacenados.
 
-**R.F.N.05. Compatibilidad**
+**R.N.F.05. Compatibilidad**
 
-Como usuario
+**Como** usuario
 
-quiero poder utilizar la plataforma desde distintos dispositivos y navegadores web actuales
+**quiero** poder utilizar la plataforma desde distintos dispositivos y navegadores web actuales
 
-para poder acceder al servicio independientemente del equipo utilizado.
+**para** poder acceder al servicio independientemente del equipo utilizado.
 
 -- fin entregable 1 --
 

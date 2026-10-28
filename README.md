@@ -424,10 +424,10 @@ Un cliente no podrá realizar más de tres alquileres de dispositivos durante un
 ### 4.2. Mapa de historias de usuario
 | **Consultar catálogo** | **Alquileres y devoluciones** | **Mantenimiento e incidencias** | **Administración general** |
 | --- | --- | --- | --- |
-| **RF01.** Listado con filtros | **RF04.** Consulta del alquiler activo | **RF02.** Historial de un dispositivo | **RF08.** Gestión de dispositivos |
-| **RF03.** Detalle de dispositivo | **RF06.** Alquileres próximos a vencer | **RF05.** Incidencias abiertas | **RF09.** Gestión de alquileres |
-|   | **RF10.** Gestión de devoluciones | **RF07.** Mayor reutilización | **RF11.** Gestión de incidencias |
-|   |   | **RF12.** Reacondicionamientos |   |
+| **RF01.** Dispositivos disponibles | **RF04.** Alquiler activo de un cliente | **RF02.** Historial de alquileres de  un dispositivo | **RF08.** Gestión de dispositivos |
+| **RF03.** Información de un dispositivo | **RF06.** Alquileres próximos a vencer | **RF05.** Incidencias abiertas | **RF09.** Gestionar alquileres |
+|   | **RF10.** Gestionar devoluciones | **RF07.** Dispositivos con mayor reutilización | **RF11.** Gestionar incidencias |
+|   |   | **RF12.** Gestionar reacondicionamientos |   |
 
 
 ### 4.3. Requisitos no funcionales 

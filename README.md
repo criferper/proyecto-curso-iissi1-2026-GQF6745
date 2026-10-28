@@ -416,7 +416,7 @@ Un cliente solo podrá realizar un alquiler activo al mismo tiempo. Para alquila
 
 Cuando se presente una incidencia que afecte al correcto funcionamiento de un dispositivo electrónico, este no volverá a estar disponible hasta que haya sido revisado y el técnico de reacondicionamiento determine que puede volver a su uso.
 
-### R.N.05. Límite anual de alquileres por cliente
+#### R.N.05. Límite anual de alquileres por cliente
 
 Un cliente no podrá realizar más de tres alquileres de dispositivos durante un mismo año natural. El sistema mantendrá un contador de los alquileres realizados e impedirá el registro de cualquier nueva solicitud cuando ya se haya alcanzado dicho límite.
 

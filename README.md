@@ -217,6 +217,7 @@ ADMINISTRADOR DE LA PLATAFORMA: Empleado encargado de gestionar la información 
 - Se debe comprobar que no pueda realizarse el **registro** de un alquiler para un dispositivo que no se encuentra disponible.
 - Se debe comprobar que no pueda realizarse el **registro** de un nuevo alquiler para un cliente que ya tenga un alquiler activo.
 - Si existen filtros de búsqueda, se debe comprobar que su **limpiado** permita volver a visualizar todos los alquileres.
+- Se debe comprobar que no pueda realizarse el registro de un nuevo alquiler cuando el cliente ya haya realizados tres alquileres en un mismo año natural, aplicando la R.N.05.
 
 ### R.F.10. Gestionar devoluciones
 
@@ -345,6 +346,7 @@ ADMINISTRADOR DE LA PLATAFORMA: Empleado encargado de gestionar la información 
 - Se debe comprobar que se almacenen la tarifa y el precio aplicados.
 - Se debe comprobar que pueda conocerse si el alquiler se encuentra activo o finalizado.
 - Se debe comprobar que la información almacenada permita consultar los alquileres próximos a vencer.
+- Se debe comprobar que la información almacenada permita conocer el número de alquileres realizados por un cliente en un mismo año natural.
 
 #### R.I.06. Información de devoluciones
 
@@ -379,20 +381,21 @@ ADMINISTRADOR DE LA PLATAFORMA: Empleado encargado de gestionar la información 
 - Se debe comprobar que se registre el estado resultante del sipositivo.
 - Se debe comprobar que puedan consultarse posteriormente los reacondicionamientos realizados sobre un dispositivo.
 
-#### R.I.08. Información de incidencias
+#### R.I.08. Información de incidencias y solicitudes
 
 **Como** administrador de la plataforma,
 
-**quiero** conocer la información sobre las incidencias detectadas en los aparatos tecnológicos, incluyendo el dispositivo afectado, la descripción del problema, fecha de apertura, fecha de cierre, el estado de la incidencia y el alquiler durante el cual se produjo
+**quiero** conocer la información sobre las solicitudes e incidencias detectadas en los aparatos tecnológicos, incluyendo el dispositivo afectado, solicitud del cliente, la descripción del problema, fecha de apertura, fecha de cierre, estado y el alquiler durante el cual se produjo
 
-**para** poder hacer un seguimiento de los problemas detectados en los dispositivos.
+**para** poder hacer un seguimiento de los problemas detectados en los dispositivos y conectar las revisiones técnicas con la solicitud realizada por el cliente.
 
 **Prueba de aceptación**
-- Se debe comprobar que cada reacondicionamiento tenga un identificador único.
-- Se debe comprobar que este asociado a un dispositivo existente.
+- Se debe comprobar que cada incidencia tenga un identificador único.
+- Se debe comprobar que esté asociado a un dispositivo existente.
+- Se debe comprobar que la revisión o incidencia quede vinculada a la solicitud realizada por el cliente.
 - Se debe comprobar que se almacenen la descripción y fecha de apertura de la incidencia.
-- Se debe comprobar que la fecha de cierre pueda almacenarse cuando la incidencia sea solucionada.
-- Se debe comprobar que puedan consultarse posteriormente los reacondicionamientos realizados sobre un dispositivo.
+- Se debe comprobar que la fecha de cierre se registre cuando la incidencia quede solucionada.
+- Se debe comprobar que pueda conocerse si la incidencia o revisión permanece abierta o ya está cerrada.
 - Se debe comprobar que, cuando la incidencia se produzca durante un alquiler, pueda quedar asociada al alquiler correspondiente.
 
 ### 4.1.2. Reglas de negocio
@@ -413,7 +416,9 @@ Un cliente solo podrá realizar un alquiler activo al mismo tiempo. Para alquila
 
 Cuando se presente una incidencia que afecte al correcto funcionamiento de un dispositivo electrónico, este no volverá a estar disponible hasta que haya sido revisado y el técnico de reacondicionamiento determine que puede volver a su uso.
 
-### R.N.03.
+### R.N.05. Límite anual de alquileres por cliente
+
+Un cliente no podrá realizar más de tres alquileres de dispositivos durante un mismo año natural. El sistema mantendrá un contador de los alquileres realizados e impedirá el registro de cualquier nueva solicitud cuando ya se haya alcanzado dicho límite.
 
 
 ### 4.2. Mapa de historias de usuario

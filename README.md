@@ -116,7 +116,7 @@ ADMINISTRADOR DE LA PLATAFORMA: Empleado encargado de gestionar la información 
 
 **para** ver si se ajusta a mis necesidades.
 
-**Prueba de acepatción**
+**Prueba de aceptación**
 -Se debe comprobar que el cliente pueda realizar la **consulta** del dispositivo seleccionado, y que durante esta se muestren las características correspondientes al modelo del dispositivo.
 -Se debe comprobar que durante la **consulta** se muestre el precio del alquiler correspondiente.
 -Se debe comprobar que durante la **consulta** se indique si el dispositivo se encuentre disponible para alquiler.
@@ -378,7 +378,7 @@ ADMINISTRADOR DE LA PLATAFORMA: Empleado encargado de gestionar la información 
 - Se debe comprobar que esté asociado a un dispositivo existente.
 - Se debe comprobar que se almacene la fecha de realización.
 - Se debe comprobar que puedan almacenarse los problemas detectados y las actuaciones o reparaciones realizadas.
-- Se debe comprobar que se registre el estado resultante del sipositivo.
+- Se debe comprobar que se registre el estado resultante del dipositivo.
 - Se debe comprobar que puedan consultarse posteriormente los reacondicionamientos realizados sobre un dispositivo.
 
 #### R.I.08. Información de incidencias y solicitudes
@@ -452,7 +452,7 @@ Un cliente no podrá realizar más de tres alquileres de dispositivos durante un
 
 **Como** cliente,
 
-**quiero** que el acceso a las funciones de la plataforma estÉ protegido según el tipo de usuario,
+**quiero** que el acceso a las funciones de la plataforma esté protegido según el tipo de usuario,
 
 **para** evitar operaciones no autorizadas.
 

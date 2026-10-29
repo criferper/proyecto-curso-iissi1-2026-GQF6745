@@ -402,23 +402,23 @@ ADMINISTRADOR DE LA PLATAFORMA: Empleado encargado de gestionar la información 
 
 #### R.N.01. Ausencia de solapamiento entre alquileres
 
-Un mismo dispositivo no puede estar asociado a dos alquileres en periodos que coincidan. Para realizar un nuevo alquiler, el dispositivo debe encontrarse disponible durante todo el periodo.
+Un mismo dispositivo no puede estar asociado a dos alquileres en periodos que coincidan.
 
-#### R.N.02. Estado adecuado para el alquiler
+#### R.N.02. Límite de deuda
 
-Un dispositivo solo puede ser alquilado cuando se encuentre disponible y en las condiciones necesarias para su uso. Si necesita una revisión o reparación no podrán ofrecerse hasta que se compruebe nuevamente su correcto funcionamiento.
+Un cliente no debe alquilar si debe más de 100 euros 
 
 #### R.N.03. Límite de alquileres activos por cliente
 
-Un cliente solo podrá realizar un alquiler activo al mismo tiempo. Para alquilar otro dispositivo deberá haber finalizado y devuelto el anterior.
+Un cliente solo podrá realizar un alquiler activo al mismo tiempo.
 
 #### R.N.04. Dispositivo con incidencia
 
-Cuando se presente una incidencia que afecte al correcto funcionamiento de un dispositivo electrónico, este no volverá a estar disponible hasta que haya sido revisado y el técnico de reacondicionamiento determine que puede volver a su uso.
+No se puede alquilar un dispositivo que tiene una incidencia que no está cerrada.
 
 #### R.N.05. Límite anual de alquileres por cliente
 
-Un cliente no podrá realizar más de tres alquileres de dispositivos durante un mismo año natural. El sistema mantendrá un contador de los alquileres realizados e impedirá el registro de cualquier nueva solicitud cuando ya se haya alcanzado dicho límite.
+Un cliente no podrá realizar más de tres alquileres de dispositivos durante un mismo año natural.
 
 
 ### 4.2. Mapa de historias de usuario

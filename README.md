@@ -543,6 +543,7 @@ classDiagram
     dispositivo1 -->alquiler1 : es objeto de
     dispositivo2 ..> alquiler2 : intenta asociarse
 ```
+
 **Resultado esperado:** Mensaje de error 'Transacción denegada: el dispositivo ya se encuentra alquilado en el periodo seleccionado.'
 
 **Regla de negocio comprobada:** RN-01(violada).
@@ -604,6 +605,7 @@ classDiagram
     irene ..> alquiler5 : intenta realizar
     dispositivo3 ..> alquiler5 : se intenta alquilar
 ```
+
 **Resultado esperado:** Mensaje de error "Operación no permitida: el cliente ya dispone de un alquiler activo en curso."
 
 **Regla de negocio comprobada:** RN-03 (violada).
@@ -643,6 +645,7 @@ classDiagram
     mario --> alquiler8 : realiza
     mario ..> alquiler : intenta realizar
 ```
+
  **Resultado esperado: ** Error "Operación rechazada: se ha alcanzado el límite de 3 alquileres en el año natural 2026."
 
  **Regla de negocio comprobada: **RN-05 (violada).
@@ -665,7 +668,7 @@ classDiagram
     }
     class alquiler10["alquiler10 : alquiler"]{
         fechaInicio = 2026-10-02
-        fechaPrevistaFin = 2029-11-02
+        fechaPrevistaFin = 2026-11-02
         fechaFin = 2026-11-02
         estado 0 finalizado
     }
@@ -679,6 +682,7 @@ classDiagram
     dispositivo4 --> alquiler10 : es objeto de
     incidencia1 --> alquiler10 : ocurrida en
 ```
+
 **Regla de negocio comprobada:** RN-04 (satisfecha).
     
 

@@ -482,7 +482,69 @@ Un cliente no podrá realizar más de tres alquileres de dispositivos durante un
 
 ### 5.2. Escenarios de prueba
 
-- con descripción textual y diagrama de objetos UML.
+**Nota sobre el cálculo de atributos derivados**
+- dispositivo./estado: Se evalúa dinámicamente como en_mantenimiento si posee una incidencia con estado=abierta ; toma el valor alquilado cuando está asociado a un alquiler en estado activo; o permanece disponible en cualquier otro estado.
+- alquiler./fechaFin: Se completa únicamente al registrarse la devolución real del dispositivo, conmutando el estado del contrato de activo a finalizado.
+
+###E1. Alquiler válido
+
+**Descripción:** El cliente Mario Casas Pérez, sin deudas (RN-02) ni alquileres activos (RN-03), y habiendo realizado 0 alquileres en el año 2026 (RN-05), solicita el alquiler de un portátil Lenovo en estado disponible y sin incidencias (RN-04). Se crea el contrato alquiler1 del 01/11/2026 al 01/12/2026 por 120.00€, verificando que el equipo esté libre en esas fechas (RN-01). Al activarse el contrato, el atributo derivado del dispositivo cambia a /estado=alquilado.
+
+**Diagrama de objetos UML**
+```mermaid
+classDiagram
+    class mario["mario : cliente"]{
+        nombre = Mario
+        apellidos = Casas Pérez
+        email = mario.casas@gmail.com
+        deuda = 0.00
+    }
+    class dispositivo1["dispositivo1 : dispositivo"]{
+        condicion = reacondicionado A
+        estado = alquilado
+    }
+    class alquiler1["alquiler1 : alquiler"]{
+        fechaInicio = 2026-11-01
+        fechaPrevistaFin = 2026-12-01
+        precioAplicado = 120.00
+        fechaFin = NULL
+        feechaPago = 2026-11-01
+        estado = activo
+    }
+    mario --> alquiler1 : realiza
+    dispositivo1 --> alquiler1 : es objeto de
+````
+**Reglas de negocio comprobadas:** RN-01, RN-02, RN-03, RN-04, RN-05.
+
+###E2. Alquileres con fechas solapadas
+**Descripción:** El dispositivo1 tiene el contrato alquiler1 en estado activo para el periodo 01-11-2026 al 30-11-2026. se intenta registrar un segundo alquiler (alquiler2) sobre una misma unidad física para el tramo del 15-11-2026 al 15-12-2026. El sistema detecta una superposición de fechas y bloque la solicitud en aplicación de la regla RN-01. El objeto alquiler2 no llega a crearse.
+
+**Diagrama de objetos UML**
+ ```mermeid
+classDiagram
+    class dispositivo1["dispositivo1 : dispositivo"]{
+        condicion = reacondicionado A 
+        estado = activo
+    }
+    class alquiler1[""alquiler1 : alquiler]{
+        fechaInicio = 2026-11-01
+        fechaPrevistFin = 2026-12-01
+        precioAplicado = 120.00
+        fechaFin = NULL
+        fechaPago = 2026-11-01
+        estado = activo
+    }
+    class alquiler2[""alquiler2 : alquiler]{
+        fechaInicio = 2026-11-15
+        fechaPrevistFin = 2026-12-15
+        estado = rechazado
+    }
+    dispositivo1 -->alquiler1 : es objeto de
+    dispositivo2 ..> alquiler2 : intenta ascociarse
+```
+**Resultado esperado:** Mensaje de error 'Transacción denegada: el dispositivo ya se encuentra alquilado en el periodo seleccionado'
+**Regla de negocio comprobada:** RN-01
+
 
 ## 6. Matrices de trazabilidad
 

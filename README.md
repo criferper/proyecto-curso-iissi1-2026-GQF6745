@@ -488,13 +488,13 @@ Un cliente no podrá realizar más de tres alquileres de dispositivos durante un
 
 #### E1. Alquiler válido
 
-**Descripción:** El cliente Mario Casas Pérez, sin deudas (RN-02) ni alquileres activos (RN-03), y habiendo realizado 0 alquileres en el año 2026 (RN-05), solicita el alquiler de un portátil Lenovo en estado disponible y sin incidencias (RN-04). Se crea el contrato alquiler1 del 01/11/2026 al 01/12/2026 por 120.00€, verificando que el equipo esté libre en esas fechas (RN-01). Al activarse el contrato, el atributo derivado del dispositivo cambia a /estado=alquilado.
+**Descripción:** El cliente Oscar Casas Pérez, sin deudas (RN-02) ni alquileres activos (RN-03), y habiendo realizado 0 alquileres en el año 2026 (RN-05), solicita el alquiler de un portátil Lenovo en estado disponible y sin incidencias (RN-04). Se crea el contrato alquiler1 del 01/11/2026 al 01/12/2026 por 120.00€, verificando que el equipo esté libre en esas fechas (RN-01). Al activarse el contrato, el atributo derivado del dispositivo cambia a /estado=alquilado.
 
 **Diagrama de objetos UML**
 ```mermaid
 classDiagram
-    class mario["mario : cliente"]{
-        nombre = Mario
+    class oscar["oscar : cliente"]{
+        nombre = Oscar
         apellidos = Casas Pérez
         email = mario.casas@gmail.com
         deuda = 0.00
@@ -514,7 +514,7 @@ classDiagram
     mario --> alquiler1 : realiza
     dispositivo1 --> alquiler1 : es objeto de
 ````
-**Reglas de negocio comprobadas:** RN-01, RN-02, RN-03, RN-04, RN-05.
+**Reglas de negocio comprobadas:** RN-01, RN-02, RN-03, RN-04, RN-05 (satisfechas).
 
 #### E2. Alquileres con fechas solapadas
 
@@ -580,7 +580,7 @@ classDiagram
 
 **Descripción:** La cliente Irene Gómez Mayor mantiene actualmente el alquier4 en estado activo asociado a una tablet Apple. Sin concluir dicho periodo, trata de realizar la reserva paralela de un ordenador portátil HP que se encuentra en estado disponible. El sistema rechaza la transacción en cumplimiento de la regla RN-03. El segundo objeto (alquiler5), no llega a crearse.
 
-**Diagrama de objetos UML (Intento de registro)**
+**Diagrama de objetos UML**
 ```mermaid
 classDiagram
     class irene["irene : cliente"]{
@@ -604,7 +604,83 @@ classDiagram
     irene ..> alquiler5 : intenta realizar
     dispositivo3 ..> alquiler5 : se intenta alquilar
 ```
+**Resultado esperado:** Mensaje de error "Operación no permitida: el cliente ya dispone de un alquiler activo en curso."
 
+**Regla de negocio comprobada:** RN-03 (violada).
+
+#### E5. Cuarto alquiler dentro del mismo año natural
+
+**Descripción:** El cliente Mario Vaquerizo Caro ha completado tres alquileres previos (alquiler6, alquiler7, alquiler8) finalizados a lo largo del año 2026. El 20/11/2026 intenta tramitar un cuarto alquiler (alquiler9). El sistema contabiliza sus operaciones en el año natural y bloquea la reserva al violar la regla RN-05. El objeto alquiler9 no llega a instanciarse.
+
+**Diagrama de objetos UML**
+
+```mermaid
+classDiagram
+    class mario ["mario : cliente"]{
+        nombre = Mario
+        apellidos = Vaquerizo Caro
+        email = mvaquerizate@gmail.com
+    }
+    class alquiler6["alquiler6 : alquiler"]{
+        fechaInicio = 2026-02-24
+        estado = finalizado
+    }
+    class alquiler7["alquiler7 : alquiler"]{
+        fechaInicio = 2026-05-18
+        estado = finalizado
+    }
+    class alquiler8["alquiler8 : alquiler"]{
+        fechaInicio = 2029-09-03
+        estado = finalizado
+    }
+    class alquiler9["alquiler9 : alquiler"]{
+        fechaInicio = 2026-11-21
+        estado = rechazado
+    }
+
+    mario --> alquiler6 : realiza
+    mario --> alquiler7 : realiza
+    mario --> alquiler8 : realiza
+    mario ..> alquiler : intenta realizar
+```
+ **Resultado esperado: ** Error "Operación rechazada: se ha alcanzado el límite de 3 alquileres en el año natural 2026."
+
+ **Regla de negocio comprobada: **RN-05 (violada).
+
+ #### E6. Devolución con registro de incidencia técnica
+
+ **Descripción:** El cliente Jacobo Rico Muela entrega el equipo dispositivo4 (tablet iPad) al finalizar su contrato. Se registra la fecha real de la devolución (/fechaFin = 2026-10-02) y el contrato alquiler10 conmuta a estado finalizado. En la inspección técnica de entrada se detecta una avería y se genera una incidencia incidencia1. Al existir una incidencia no resuelta, el atributo derivado del equipo pasa automáticamente a /estado = en_mantenimiento.
+
+ **Diagrama de objetos UML**
+ ```mermaid
+ classDiagram
+    class jacobo["jacobo : cliente"]{
+        nombre = Jacobo
+        apellidos = Rico Muela
+        email = jricomuela@mail.com
+    }
+    class dispositivo4["dispositivo4 : dispositivo"]{
+        condicion = En revisión
+        estado = en_mantenimiento
+    }
+    class alquiler10["alquiler10 : alquiler"]{
+        fechaInicio = 2026-10-02
+        fechaPrevistaFin = 2029-11-02
+        fechaFin = 2026-11-02
+        estado 0 finalizado
+    }
+    class incidencia1["incidencia1 : incidencia"]{
+        descripcionProblema = Puerto USB roto
+        fechaApertura = 2026-11-02
+        fechaCierre = NULL
+        estado = abierta
+    }
+    jacobo --> alquiler10 : realiza
+    dispositivo4 --> alquiler10 : es objeto de
+    incidencia1 --> alquiler10 : ocurrida en
+```
+**Regla de negocio comprobada:** RN-04 (satisfecha).
+    
 
 
 ## 6. Matrices de trazabilidad

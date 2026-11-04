@@ -543,19 +543,38 @@ classDiagram
     dispositivo1 -->alquiler1 : es objeto de
     dispositivo2 ..> alquiler2 : intenta ascociarse
 ```
-**Resultado esperado:** Mensaje de error 'Transacción denegada: el dispositivo ya se encuentra alquilado en el periodo seleccionado'
+**Resultado esperado:** Mensaje de error 'Transacción denegada: el dispositivo ya se encuentra alquilado en el periodo seleccionado.'
 
-**Regla de negocio comprobada:** RN-01(violada)
+**Regla de negocio comprobada:** RN-01(violada).
 
 #### E.3 Intento del alquiler con deuda superior a 100€ 
 
 **Descripción:** La cliente Julia Menú García solicita alquilar una tablet. Durante la verificación, el sistema comprueba que registra un saldo impagado de 140.00€ . Al superar el límite máximo de deuda de 100.00€, la plataforma rechaza la operación violando la regla RN-02. El contrato alquiler3 no se genera y el equipo se mantiene en estado dispoenible.
 
 **Diagrama de objetos UML (Intento de registro)**
-````mermaid
+```mermaid
 classDiagram
     class julia["julia : cliente"]{
-        }
+        nombre = Julia
+        apellidos = Menú García
+        email = juliamg@mail.com
+        deuda = 140.00
+    }
+    class dispositivo2["dispositivo2 : dispositivo"]{
+        condicion = Excelente
+        estado = disponible
+    }
+    class alquiler3["alquiler3 = alquiler"]{
+        precioAplicado = 45.00
+        estado = rechazado
+    }
+    julia --> alquiler3 : intenta realizar
+    dispositivo2 ..> alquiler3 : se intenta alquilar
+```
+
+**Mensaje esperado:** Mensaje de error "Solicitud rechazada: la cliente acumula una deuda mayor al límite de 100.00€."
+
+**Regla de negocio comprobada:** RN-02 (violada).
 
 ## 6. Matrices de trazabilidad
 

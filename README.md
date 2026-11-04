@@ -691,15 +691,17 @@ classDiagram
 
 - Matriz de trazabilidad entre los elementos del modelo conceptual y los requisitos.
 
-|       | EntidadX   | AsociaciónX  | RestricciónX  | Entidad2 ...   | 
-|:------|:-----------|:-----------|:-----------|:-----------|
-| RI-1  | X          | X          | X          | X          |
-| RI-2  |            | X          |            | X          |
-| RF-1  |            | X          |            | X          |
-| RF-2  | X          |            | X          | X          |
-| RN-1  |            | X          |            |            |
-| RN-2  | X          | X          | X          |            |
-| ...   |            |            |            |            |
+|       | cliente | realiza  | Restricción (cliente)  | dispositivo  | es objeto de  | Restricción (dispositivo) | modeloDispositivo | alquiler | incidencia | ocurrida en |
+|:------|:-----------|:-----------|:-----------|:-----------| :---| :--- | :--- | :--- | :--- | :--- | :--- !
+| RI-1  | X | | X (`deuda`) | | | | | | | |
+| RI-2  | | | | X | | | X | | | |
+| RI-3  | X | X | | | X | | | X | | |
+| RI-4  | | | | | | | | | X | X |
+| RN-1  | | | | X | X | X (`/estado`) | | X | | |
+| RN-2  | X | X | X (`deuda <= 100€`)| | | | | X | | |
+| RN-3  | X | X | X (`máx 1 activo`) | | | | | X | | |
+| RN-4  | | | | X | | X (`/estado = en-mantenimiento`) | | | X | X |
+| RN-5  | X | X | X (`máx 3año`) | | | | | X | | |
 
 -- fin entregable 2 --
 

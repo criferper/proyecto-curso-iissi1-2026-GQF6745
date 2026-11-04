@@ -527,7 +527,7 @@ classDiagram
         condicion = reacondicionado A
         estado = activo
         }
-    class alquiler1[""alquiler1 : alquiler]{
+    class alquiler1["alquiler1 : alquiler"]{
         fechaInicio = 2026-11-01
         fechaPrevistFin = 2026-12-01
         precioAplicado = 120.00
@@ -535,13 +535,13 @@ classDiagram
         fechaPago = 2026-11-01
         estado = activo
     }
-    class alquiler2[""alquiler2 : alquiler]{
+    class alquiler2["alquiler2 : alquiler"]{
         fechaInicio = 2026-11-15
-        fechaPrevistFin = 2026-12-15
+        fechaPrevistaFin = 2026-12-15
         estado = rechazado
     }
     dispositivo1 -->alquiler1 : es objeto de
-    dispositivo2 ..> alquiler2 : intenta ascociarse
+    dispositivo2 ..> alquiler2 : intenta asociarse
 ```
 **Resultado esperado:** Mensaje de error 'Transacción denegada: el dispositivo ya se encuentra alquilado en el periodo seleccionado.'
 
@@ -575,6 +575,37 @@ classDiagram
 **Mensaje esperado:** Mensaje de error "Solicitud rechazada: la cliente acumula una deuda mayor al límite de 100.00€."
 
 **Regla de negocio comprobada:** RN-02 (violada).
+
+#### E4. Intento de segundo alquiler simultáneo
+
+**Descripción:** La cliente Irene Gómez Mayor mantiene actualmente el alquier4 en estado activo asociado a una tablet Apple. Sin concluir dicho periodo, trata de realizar la reserva paralela de un ordenador portátil HP que se encuentra en estado disponible. El sistema rechaza la transacción en cumplimiento de la regla RN-03. El segundo objeto (alquiler5), no llega a crearse.
+
+**Diagrama de objetos UML (Intento de registro)**
+```mermaid
+classDiagram
+    class irene["irene : cliente"]{
+        nombre = Irene
+        apellidos = Gómez Mayor
+        email = irenegoma@mail.com
+    }
+    class alquiler4["alquiler4 : alquiler"]{
+        fechaInicio = 2026-11-01
+        fechaPrevistaFin = 2026-11-30
+        estado = activo
+    }
+    class dispositivo3["dispositivo3 : dispositivo"]{
+        condicion = seminuevo
+        estado = disponible
+    }
+    class alquiler5["alquiler5 : alquiler"]{
+        estado = rechazado
+    }
+    irene --> alquiler4 : realiza
+    irene ..> alquiler5 : intenta realizar
+    dispositivo3 ..> alquiler5 : se intenta alquilar
+```
+
+
 
 ## 6. Matrices de trazabilidad
 

@@ -478,7 +478,6 @@ Un cliente no podrá realizar más de tres alquileres de dispositivos durante un
 
 ### 5.1. Diagramas de clases UML
 
-classDiagram
    
 
 ### 5.2. Escenarios de prueba

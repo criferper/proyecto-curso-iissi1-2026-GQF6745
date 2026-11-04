@@ -692,7 +692,7 @@ classDiagram
 - Matriz de trazabilidad entre los elementos del modelo conceptual y los requisitos.
 
 | | cliente | realiza  | Restricción (cliente)  | dispositivo  | es objeto de  | Restricción (dispositivo) | modeloDispositivo | alquiler | incidencia | ocurrida en |
-|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | RI-1  | X | | X (`deuda`) | | | | | | | |
 | RI-2  | | | | X | | | X | | | |
 | RI-3  | X | X | | | X | | | X | | |

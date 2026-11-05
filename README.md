@@ -511,7 +511,7 @@ classDiagram
         feechaPago = 2026-11-01
         estado = activo
     }
-    mario --> alquiler1 : realiza
+    oscar --> alquiler1 : realiza
     dispositivo1 --> alquiler1 : es objeto de
 ````
 **Reglas de negocio comprobadas:** RN-01, RN-02, RN-03, RN-04, RN-05 (satisfechas).
